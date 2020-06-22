@@ -1,0 +1,325 @@
+@charset "utf-8";
+/*reset*/
+*{margin:0;padding:0;}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	z-index: 2;
+}
+ 
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	height: 67px;
+	margin: 0 auto;
+	text-align: center;
+	border-bottom: 1px solid #ffc979;
+	padding: 0 50px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	background-color: #ffab30;
+}
+
+header ul li {
+	float: left;
+	height: 67px;
+}
+
+header ul li:nth-of-type(3) {
+	width: 21px;
+	padding: 0 10px 0 16px;
+}
+
+header ul li:nth-of-type(4) {
+	width: 18px;
+	padding: 0 5px;
+}
+
+header ul li a {
+	display: table;
+	height: 100%;
+	text-align: center;
+}
+
+header ul li:nth-of-type(2) a {
+	background: url('../img/Portfolio2/header_nav_bt03_off.png') right center no-repeat;
+}
+
+header ul li:nth-of-type(2) a:hover {
+	background: url('../img/Portfolio2/header_nav_bt03_on.png') right center no-repeat;
+}
+
+header ul li:nth-of-type(3) a {
+	width: 100%;
+	background: url('../img/Portfolio2/header_nav_bt01_off.png') center no-repeat;
+}
+
+header ul li:nth-of-type(3) a:hover {
+	background: url('../img/Portfolio2/header_nav_bt01_on.png') center no-repeat;
+}
+
+header ul li:nth-of-type(4) a {
+	width: 100%;
+	background: url('../img/Portfolio2/header_nav_bt02_off.png') center no-repeat;
+}
+
+header ul li:nth-of-type(4) a:hover {
+	background: url('../img/Portfolio2/header_nav_bt02_on.png') center no-repeat;
+}
+
+header ul li a span {
+	color: #9a8545;
+	display: table-cell;
+    vertical-align: middle;
+    padding: 0 5px;
+}
+
+header ul li:nth-of-type(2) a span {
+	padding-right: 25px;
+}
+
+header ul li:nth-of-type(3) a span, header ul li:nth-of-type(4) a span {
+	position: absolute;
+	top: 55px;
+	margin-left: -32px;
+	font-size: .8em;
+	text-align: center;
+	display: none;
+	width: 65px;
+	padding: .3em 0;
+	background: #a07e15;
+	border-radius: 1em;
+	color: #fff;
+	box-sizing: border-box;
+}
+
+header ul li a span:hover {
+	color: #fff;
+}
+
+header ul li:nth-of-type(1) a span:hover, header ul li:nth-of-type(2) a span:hover {
+	text-decoration: underline;
+}
+
+section {
+	width: 100%;
+	min-height: 100%;
+	height: auto;
+	margin: 0 auto -100px;
+	padding-bottom: 100px;
+	box-sizing: border-box;
+}
+
+aside {
+	width: 100%;
+	padding-top: 68px;
+	height: 131px;
+	border-bottom: 1px solid #9a8545;
+	background-color: #ffab30;
+}
+
+nav {
+	position: relative;
+	border-bottom: 1px solid #e4e4e4;
+	width: 100%;
+	height: 53px;
+	background-color: #fff;
+	box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+
+nav ul {
+	display: table;
+	width: 100%;
+	max-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	border-top: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+nav ul li {
+	display: table-cell;
+	width: 16.66666666666667%;
+	padding: 0;
+	text-align: center;
+	color: #222;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+nav ul li span {
+	position: relative;
+	display: block;
+	height: 100%;
+	line-height: 56px;
+	color: #222;
+	font-size: 1.1em;
+	text-shadow: 0.5px 0;
+	text-decoration: none;
+}
+
+article {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 2.5em 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+footer {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #eaeaea;
+}
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+ @font-face{
+ 	font-family:Roboto-Bold;
+ 	src:url(../fonts/Roboto-Bold.ttf) format("truetype");
+ 	font-style:normal;
+ }
+ @font-face{
+ 	font-family:RixSGoEB;
+ 	src:url(../fonts/RixSGoEB.woff) format("woff");
+ 	font-style:normal;
+ }
+
+ @font-face{
+ 	font-family:RixSGoM;
+ 	src:url(../fonts/RixSGoM.woff) format("woff");
+ 	font-style:normal;
+ }
+
+body {
+	position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-family: 'RixSGoM', 'Nanum Gothic', '나눔고딕', Arial, sans-serif;
+    line-height: 1.3em;
+	color: #333;
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	outline: transparent;
+}
+
+/*********************font size*********************/
+
+
+/*********************float*********************/
+
+.float_l {float: left;}
+
+.float_r {float: right;}
+
+/*********************margin*********************/
+
+
+
+/*********************border*********************/
+
+
+
+/*********************background color*********************/
+
+.bg_white {background-color: #fff;}
+
+.bg_black {background-color: #000;}
+
+/*********************font color*********************/
+
+.ft_white {color: #fff;}
+
+.ft_black {color: #000;}
+
+/*********************background*********************/
+
+/*********************media query*********************/
+
+@media screen and (max-width: 1440px){
+	header {padding: 0 15px;}
+}
+
+@media screen and (max-width: 991px){
+	header { height: 144px; }
+
+	nav, aside .searchBox {display: none;}
+
+	aside { height: 76px; border: 0; }
+
+	article { padding: 30px 15px; }
+}
+
+@media screen and (max-width: 767px){
+	header ul li:nth-of-type(1), header ul li:nth-of-type(2) a span, header ul li:nth-of-type(3), header ul li:nth-of-type(4) {
+		display: none;
+	}
+
+	header ul li:nth-of-type(2) {
+		margin-top: 18px;
+	}
+
+	header ul li:nth-of-type(2) a {
+		width: 15px;
+		height: 21px;
+	}
+}
