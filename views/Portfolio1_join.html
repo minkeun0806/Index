@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="블록체인과 IoT의 미래 2017">
+    <meta name="Description" content="제4차 산업혁명 시대를 이끄는 기술, 블록체인과 IoT의 미래 2017">
+    <meta name="viewport" id="viewport" content="width=device-width, height=device-height, initial-scale=0.72, minimum-scale=0.72, maximum-scale=1, user-scalable=no" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./../image/browser_icons/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="./../image/browser_icons/ms-icon-70x70.png">
+    <meta name="msapplication-TileImage" content="./../image/browser_icons/ms-icon-150x150.png">
+    <meta name="msapplication-TileImage" content="./../image/browser_icons/ms-icon-310x310.png">
+    <meta name="theme-color" content="#ffffff">
+
+	<meta name="robots" content="index,follow">
+  <link rel="canonical" href="./Portfolio1_index.html">
+  <title>블록체인과 IoT의 미래 2017</title>
+    <meta name="description" content="제4차 산업혁명 시대를 이끄는 기술, 블록체인과 IoT의 미래 2017 컨퍼런스 공식 사이트">
+    <meta property="og:type" content="website">
+  <meta property="og:title" content="블록체인과 IoT의 미래 2017">
+  <meta property="og:description" content="제4차 산업혁명 시대를 이끄는 기술, 블록체인과 IoT의 미래 2017 컨퍼런스 공식 사이트">
+  <meta property="og:image" content="./../image/Untitled-3.jpg">
+  <meta property="og:url" content="./Portfolio1_index.html">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./../image/browser_icons/new-pabicon.ico?v=2">
+    <link rel="apple-touch-icon" sizes="57x57" href="./../image/browser_icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./../image/browser_icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./../image/browser_icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./../image/browser_icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./../image/browser_icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./../image/browser_icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./../image/browser_icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./../image/browser_icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./../image/browser_icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./../image/browser_icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./../image/browser_icons/android-icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="./../image/browser_icons/android-icon-72x72.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="./../image/browser_icons/android-icon-48x48.png">
+    <link rel="icon" type="image/png" sizes="36x36" href="./../image/browser_icons/android-icon-36x36.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="./../image/browser_icons/android-icon-144x144.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./../image/browser_icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./../image/browser_icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./../image/browser_icons/favicon-16x16.png">
+
+    <link rel="stylesheet" href="./../css/conference_common.css" type="text/css">
+    <link rel="stylesheet" href="./../css/conference_layout.css" type="text/css">
+
+    <script type="text/javascript" src="./../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./../js/jquery.selectbox-0.2.js"></script>
+    <script type="text/javascript" src="./../js/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="./../js/conference_join.js"></script>
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="./js/html5shiv.min.js"></script>
+      <script type="text/javascript" src="./js/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+
+    var reloadCheck = false;
+    var onlineLimitCheck = false;
+
+    $(document).ready(function() {
+      /*
+        //모달 팝업 사이즈 조절
+        resize_modalPopup();
+
+        //모달 팝업 사이즈 조절
+        $(window).on('resize', function() {
+            resize_modalPopup();
+        });
+      */
+        //직업군 기타 입력창 숨기기
+        $("#job_etc").css('display', 'none');
+
+        //직업군 기타 설정
+        $("#x_occupation").change(function(){
+           var occupation = $("#x_occupation").val();
+           $("#x_occupation_etc").val("");
+            if(occupation == "etc"){
+               $("#job_etc").css('display', 'block');
+            }else{
+               $("#job_etc").css('display', 'none');
+            };
+        });
+
+        //직업군 select에 독립 layout 생성 및 디자인 -> Jquery Selectbox 적용
+        $("#x_occupation").selectbox();
+
+        //hint text에 css을 적용 -> Jquery placeholder 적용
+        $(":input[placeholder]").placeholder();
+
+        //모달팝업 닫기
+        $('.alert_modalClose').on('click', function(){
+            $(".alert_modalPopup p").remove();
+            $(".opacity_block").hide();
+            $(".alert_modalPopup").hide();
+            $('body').css('overflow-y', 'scroll');
+            $('.intro_submitBtn').attr("disabled",false);
+
+            if(reloadCheck){
+                reloadCheck = false;
+                location.reload();
+                location.href = './join.html#menu_4';
+            }
+            if(onlineLimitCheck){
+                location.href = './index.html';
+            }
+        });
+
+
+
+        //Jquery Selectbox를 이용해서 입력된 <Select> x_occupation 의 Value값 확인
+        /*
+        $('#value_Btn').on('click', function(){
+          var x_occupation1 = $('#x_occupation').val();
+          console.log(x_occupation1);
+        });
+        */
+    });
+
+
+
+
+    //테이블 내 textarea 자동 사이즈 조절
+    /*
+    function cmaTextareaSize(obj, bsize) { // 객체명, 기본사이즈
+      var sTextarea = document.getElementById(obj);
+      var csize = (sTextarea.scrollHeight >= bsize) ? sTextarea.scrollHeight+"px" : bsize+"px";
+      sTextarea.style.height = bsize+"px";
+      sTextarea.style.height = csize;
+  }
+*/
+    //테이블 내 textarea 자동 사이즈 조절
+    function resize(obj) {
+      obj.style.height = "1px";
+      obj.style.height = (obj.scrollHeight)+"px";
+    }
+
+/*
+    //모달 팝업 사이즈 조절
+    function resize_modalPopup(){
+      if(678 >= $(window).width()){
+        $('.alert_modalPopup').css({'width':'82.5%', 'margin-left': '-' + $('.alert_modalPopup').width()/2, 'margin-top': '-' + $('.alert_modalPopup').height()/2});
+      }else{
+        $('.alert_modalPopup').css({'width':'512px', 'margin-left': '-256px', 'margin-top': '-' + $('.alert_modalPopup').height()/2});
+      };
+    };
+*/
+
+
+
+    $(function(){
+    /*
+    //직업군 기타 설정
+    $("#x_occupation").change(function(){
+      var occupation = $("#x_occupation").val();
+      $("#x_occupation_etc").val("");
+      if(occupation == "etc"){
+		$("#job_etc").css('display', 'block');
+      }else{
+        $("#job_etc").css('display', 'none');
+      }
+    });
+*/
+
+
+
+    //전화번호 자동 칸 넘김 시작
+    /* $('.x_hp').find('input[type=text]').keyup(function(){
+      console.log("키업");
+        var charLimit = $(this).attr("maxlength");
+        if (this.value.length >= charLimit) {
+            $(this).next('input[type=text]').focus();
+            return false;
+        }
+    });  */
+    //전화번호 자동 칸 넘김 끝
+
+
+
+
+    //직업군 select 변경시 이벤트 시작
+    $('#x_occupation').change(function(){
+      var x_occupation = $('#x_occupation').val();
+      if(x_occupation == 'etc'){
+            $('#x_occupation_etc').attr('name','isNotNull');
+            $('#x_occupation_etc').attr('title','직업군');
+         }else{
+          $('#x_occupation_etc').attr('name','');
+         };
+    });
+    //직업군 select 변경시 이벤트 끝
+
+
+
+
+    //참여경로 변경시 이벤트 시작
+    $('[name=x_search_path]').change(function(){
+      var x_search_path = $(this).val();
+      if(x_search_path == 'etc'){
+            var x_search_etc = $('#x_search_etc').val();
+            if(x_search_etc == ''){
+              $('#x_search_etc').attr('name','isNotNull');
+              $('#x_search_etc').attr('title','참여경로');
+            };
+          }else{
+            $('#x_search_etc').attr('name','');
+            $('#x_search_etc').val('');
+          };
+    });
+    //참여경로 변경시 이벤트 끝
+
+
+
+
+    //참여경로 기타선택시 text란 보여주기
+     $('input:radio[name=x_search_path]').click(function(){
+      var value = $(this).val();
+      if(value == 'etc'){
+        $('.etc_span').show();
+      }else{
+        $('.etc_span').hide();
+      };
+    });
+
+
+
+
+    //등록시작
+    $('input[id=btn_insert]').click(function(){
+
+        var html_Message = "";
+        var x_email1= $('input[id=x_email1]').val();
+        var x_occupation_etc = $('input[id=x_occupation_etc]').val();
+        var x_occupation = $('select[id=x_occupation]').val();
+        var r_occupation = x_occupation;
+        if(x_occupation=="etc"){
+            r_occupation = x_occupation_etc;
+        };
+        var x_search_path = $('input:radio[name=x_search_path]:checked').val();
+        var x_search_etc =  $('input[id=x_search_etc]').val();
+        var r_search_path = x_search_path;
+        if(x_search_path=="etc"){
+           r_search_path = x_search_etc;
+        };
+
+        var obj = new Object();
+        obj = {
+          "request":  "member",
+          "regist":
+            [
+              { "key": "r_name", "value": encodeURIComponent($('input[id=x_name]').val()) },
+              //{ "key": "r_user_hp", "value": $('input[id=x_hp1]').val()+"-"+$('input[id=x_hp2]').val()+"-"+$('input[id=x_hp3]').val() },
+              { "key": "r_user_hp", "value": $('input[id=x_hp]').val()},
+              { "key": "r_user_email", "value": x_email1 },
+              { "key": "r_belong", "value": encodeURIComponent($('input[id=x_belong]').val())},
+              { "key": "r_rank", "value": encodeURIComponent($('input[id=x_rank]').val())},
+              { "key": "r_occupation", "value": encodeURIComponent(r_occupation) },
+              { "key": "r_search_path", "value": encodeURIComponent(r_search_path) },
+              { "key": "r_participation_reson", "value": encodeURIComponent($('textarea[id=x_participation_reason]').val()) },
+              { "key": "r_join_type", "value": "online" },
+              { "key": "r_is_join", "value": "False" },
+              { "key": "r_expenses", "value": "0" }
+            ]
+        };
+
+        if(isNull()==false){  //필수값 valid 체크
+          return false;
+        };
+
+        if(isEmail() == false) { //이메일 형식이 맞는지 체크
+            return false;
+        };
+
+        //중복확인 했을경우에만 사전등록가능
+          var jsonData = JSON.stringify(obj);
+
+          var request = $.ajax({
+          url : "",
+          contentType: 'application/json; charset=utf-8',
+          type:"post",
+          dataType : "json",
+          data : jsonData
+        });
+
+             request.done(function(jsonObj){
+               if(jsonObj.return == "RIGTOK-REGISTRATION SUCESS"){
+              	 reloadCheck = true;
+              	  html_Message = "<p class=\"fnt_bold\">정상적으로 <span class=\"fnt_pink\">사전등록</span>이<br><span class=\"fnt_pink\">완료</span>되었습니다.</p><p>행사당일 등록데스크로 오셔서 이름과 전화번호를 말씀해주시면 입장권을 발급해드립니다.</p>";
+                doLayerpopup("show", html_Message);
+                //alert("정상적으로 등록 완료 되었습니다.");
+                //location.reload();
+               }else{
+                var resultMsg = jsonObj.return;
+                if(resultMsg == "RIGTFA2-REGISTRATION DUP INFO(Phone/email)"){
+                  html_Message = "<p class=\"fnt_bold\">이미 <span class=\"fnt_pink\">사전등록</span>이 <span class=\"fnt_pink\">완료</span>된<br>이메일과 전화번호입니다.</p><p>중복된 정보로 등록하실 수 없습니다.</p>";
+                  doLayerpopup("show", html_Message);
+                  //alert("이미 존재하는 이메일 & 연락처 입니다.");
+                }else if(resultMsg == "RIGTFA2-REGISTRATION DUP INFO(Phone)"){
+                  html_Message = "<p class=\"fnt_bold\">이미 <span class=\"fnt_pink\">사전등록</span>이 <span class=\"fnt_pink\">완료</span>된<br>전화번호입니다.</p><p>중복된 전화번호로 등록하실 수 없습니다.</p>";
+                  doLayerpopup("show", html_Message);
+                  //alert("이미 존재하는 연락처 입니다.");
+                }else if(resultMsg == "RIGTFA2-REGISTRATION DUP INFO(Email)"){
+                  html_Message = "<p class=\"fnt_bold\">이미 <span class=\"fnt_pink\">사전등록</span>이 <span class=\"fnt_pink\">완료</span>된<br>이메일입니다.</p><p>중복된 이메일로 등록하실 수 없습니다.</p>";
+                  doLayerpopup("show", html_Message);
+                  //alert("이미 존재하는 이메일 입니다.");
+                }else if(resultMsg == "online registration limit over 400"){
+                	  html_Message = "<p class=\"fnt_bold\"> <span class=\"fnt_pink\">사전등록</span>이 <span class=\"fnt_pink\">마감</span>되었습니다.<br></p><p>행사당일 현장등록을 부탁드립니다.</p>";
+                  doLayerpopup("show", html_Message);
+                }else{
+                  html_Message = "<p class=\"fnt_bold\">잠시후 다시 시도해 주십시오.</span></p><p>잠시후 다시 시도해 주시기 바랍니다.</p>";
+                  doLayerpopup("show", html_Message);
+                  //alert("잠시후 다시 시도해 주시기 바랍니다.")
+                };
+
+               };
+             });
+             request.fail(function(data){
+              html_Message = "<p class=\"fnt_bold\"><span class=\"fnt_pink\">오류</span>가 <span class=\"fnt_pink\">발생</span>되었습니다.</p><p>다시 시도해 주십시오.</p>";
+              doLayerpopup("show", html_Message);
+               //alert("등록 오류");
+             });
+      });
+      //등록끝
+
+    });  // end for Loadfunction
+
+    //이메일1,2,3 유효성 검사 시작
+    function isEmail() {
+      var email1 = $('input[id=x_email1]').val();
+      var exptext1 =/^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+      var html_Message="";
+      if(exptext1.test(email1)==false){
+            html_Message = "<p class=\"fnt_bold\"> <span class=\"fnt_pink\">이메일 형식이 잘못되었습니다.</span></p><p>이메일 형식을 확인해 주세요.</p>";
+            doLayerpopup("show", html_Message);
+          //alert("메일형식이 올바르지 않습니다.");
+          //$('input[id=x_email1]').focus();
+          return false;
+        };
+      };
+
+      //연락처 유효성 검사
+      function isNumber(obj) {
+          $(obj).keyup(function(){
+              $(this).val($(this).val().replace(/[^0-9]/g,''));
+          });
+      };
+
+
+      //기타 필수입력값 유효성 검사
+      function isNull(){
+        var inputObj = $('.div_layout [name=isNotNull]');
+        var hpObj = $('#x_hp').val();
+        var x_search_path = $('input[name=x_search_path]:checked');
+        var isEmpty= true;
+        var html_Message = "";
+        var focus= "";
+
+        //인풋박스 확인
+        inputObj.each(function(index){
+            if($(this).val()==''){
+              //focus =$(this);
+              isEmpty=false;
+
+              if( $(this).attr('title') == "전화번호" || $(this).attr('title') == "참여이유" || $(this).attr('title') == "전화번호") {
+                html_Message = "<p class=\"fnt_bold\"> <span class=\"fnt_pink\">" + $(this).attr('title') +"</span>는 필수 입력사항입니다.</p><p>필수 입력사항을<br>모두 입력해 주세요.</p>";
+                doLayerpopup("show", html_Message);
+              //alert($(this).attr('title')+"는 필수 입력사항입니다.");
+            }else{
+                html_Message = "<p class=\"fnt_bold\"> <span class=\"fnt_pink\">" + $(this).attr('title') +"</span>은 필수 입력사항입니다.</p><p>필수 입력사항을<br>모두 입력해 주세요.</p>";
+                doLayerpopup("show", html_Message);
+             //alert($(this).attr('title')+"은 필수 입력사항입니다.");
+            };
+              //focus.focus();
+              return false;
+            };
+        });
+
+       //전화번호 자릿수 확인
+       if((hpObj.length > 11 || hpObj.length < 10 ) && isEmpty==true){
+          var html_Message = "<p class=\"fnt_bold\"> <span class=\"fnt_pink\">전화번호 형식이 잘못되었습니다.</span></p><p>전화번호 형식을 확인해 주세요.</p>";
+          doLayerpopup("show", html_Message);
+          //alert("전화번호 형식이 잘못되었습니다.");
+          //$(this).focus();
+          isEmpty=false;
+          return false;
+       };
+
+       //참여경로 확인
+        if($(':radio[name=x_search_path]:checked').length < 1 && isEmpty == true){
+            //focus =$(this);
+            isEmpty=false;
+            html_Message = "<p class=\"fnt_bold\"> <span class=\"fnt_pink\">참여경로</span>를 선택 해 주세요.</p><p>필수 입력사항을<br>모두 입력해 주세요.</p>";
+            doLayerpopup("show", html_Message);
+            //alert("참여경로를 선택 해 주세요");
+            //focus.focus();
+            return false;
+        };
+
+       if(isEmpty == false) return false;
+      };
+  // 팝업창 띄우기
+     function doLayerpopup(code, html) {
+
+          if (code == "show") {
+            $(".opacity_block").show();
+            $(".alert_modalPopup").show().append(html);
+            //resize_modalPopup();
+            $('body').css('overflow-y', 'hidden');
+            $('.intro_submitBtn').attr("disabled",true);
+          };
+      };
+
+
+      /*사전등록 마감 메시지*/
+      /*
+
+      var html_Message = ""
+
+      html_Message = "<p class=\"fnt_bold\"> <span class=\"fnt_pink\">사전등록</span>이 <span class=\"fnt_pink\">마감</span>되었습니다.</p><p>행사당일 현장등록을 부탁드립니다.</p>";
+      doLayerpopup("show", html_Message);
+      */
+
+      function onlineCheck(){
+      	var postData = {};
+  		$.ajax({
+  	        url : "proxy.jsp?http://inf.e-mpark.com/conference_count",
+  	        contentType: 'application/json; charset=utf-8',
+  	        type:"post",
+  	        dataType : "json",
+  	        data : postData,
+  	        success:function (response){
+  	        		if(response.return == null){
+  	        			if(Number(response.online)>=250){
+//  		        			$(".opacity_block").show();
+						onlineLimitCheck = true;
+  		        			var html = html_Message = "<p class=\"fnt_bold\"><span class=\"fnt_pink\">사전등록</span>이 <span class=\"fnt_pink\">마감</span>되었습니다.</p><p>행사 당일 <span class=\"fnt_pink\">현장등록</span>만 가능합니다.</p>";
+  		        			doLayerpopup("show", html);
+//  		        			$(".alert_modalPopup").show().append(html);
+//  		                $('body').css('overflow-y', 'hidden');
+//  		                $('.intro_submitBtn').attr("disabled",true);
+  	        			}
+  	        		}else{
+//  	        			$(".opacity_block").show();
+					onlineLimitCheck = true;
+  	        			var html = html_Message = "<p class=\"fnt_bold\">사전등록 페이지 불러오기 <span class=\"fnt_pink\">실패</span><br/></p>";
+  	        			doLayerpopup("show", html);
+//  	                $(".alert_modalPopup").show().append(html);
+//  	                $('body').css('overflow-y', 'hidden');
+//  	                $('.intro_submitBtn').attr("disabled",true);
+  	        		}
+  	        }
+  	      });
+      }
+      onlineCheck();
+    </script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    	  ga('create', 'UA-103083227-1', 'auto');
+    	  ga('send', 'pageview');
+    </script>
+  </head>
+  <body class="bg_white" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div class="opacity_block">
+    <div class="alert_modalPopup">
+      <div class="alert_modalClose"></div>
+    </div>
+  </div>
+
+    <header class="bg_blue">
+        <div class="header_container">
+            <nav class="bg_blue">
+              <div class="navigation_container">
+                 <div class="header_titleImage nav_headerImage"></div>
+                  <ul>
+                      <a href="./Portfolio1_index.html#menu_1" + 15><li>행사소개</li></a>
+                      <a href="./Portfolio1_index.html#menu_2"><li>프로그램</li></a>
+                      <a href="./Portfolio1_index.html#menu_3"><li>장소</li></a>
+                      <li class="bd_pink">사전등록</li>
+                  </ul>
+                  <div class="menu_activeActionWrapper">
+                      <div class="menu_activeActionBar bg_pink"></div>
+                  </div>
+              </div>
+            </nav>
+            <div class="header_titleImage"></div>
+            <div class=" title_contextWrapper">
+                <p>제4차 산업혁명 시대를 이끄는 기술&#44; 블록체인과 IoT의 미래 2017</p>
+                <p>2017&#46;<span class="fnt_pink fnt_sizetitle1">08&#46;17</span>&#40;목&#41;</p>
+                <p>14&#58;00&#126;16&#58;30</p>
+            </div>
+            <div class="join_footermargin">
+              <p class="title_footer">
+                  Sonofelice Convention&#44; 3F&#44; 22&#44; Teheran-ro 87-gil&#44; Gangnam-gu&#44; Seoul&#44; Republic of Korea<br>
+                  <span>http&#58;&#47;&#47;conference&#46;things9&#46;com</span>
+              </p>
+            </div>
+
+        </div>
+    </header>
+    <section>
+      <article id="menu_4">
+        <div class="article_titleWrapper"><div class=" article_titleWrapper article_titlePosition article_title6"></div></div>
+        <h1>사전등록</h1>
+        <p class="paragraph_set1 intro_paragraphMargin14">
+              <span>&#45; 당일 현장등록 참가비는 유료이며, <b class="fnt_bold fnt_pink">사전등록자</b>는 <b class="fnt_bold fnt_pink">무료</b>입니다&#46;</span><br>
+              <span>&#45; <b class="fnt_bold fnt_pink">사전등록 마감일시</b>는 <b class="fnt_bold fnt_pink">2017년 8월 7일 23시 59분</b>입니다&#46;</span><br>
+              <span>&#45; 사전등록 마감일시가 지난 이후에는 당일 현장등록만 가능합니다&#46;</span><br>
+              <span>&#45; 사전등록은 <b class="fnt_bold fnt_pink">선착순</b>으로 <b class="fnt_bold fnt_pink">조기마감</b> 될 수 있습니다&#46;</span><br>
+              <span>&#45; 사전등록자는 행사당일 등록데스크로 오셔서 이름과 전화번호를 말씀해주시면 입장권을 발급해 드립니다&#46;</span><br>
+          </p>
+          <div class="div_layout">
+        <table class="table_layout join_table">
+          <colgroup>
+            <col class="join_col1" />
+            <col class="join_col2" />
+          </colgroup>
+          <tbody>
+          <caption>제4차 산업혁명 시대를 이끄는 기술, 블록체인과 IoT</caption>
+          <tr align="center" style="display:none;">
+             <td colspan="4" style="padding:10px;">제4차 산업혁명 시대를 이끄는 기술, 블록체인과 IoT</td>
+          </tr>
+          <tr align="center">
+            <td><b class="star_shape">&#42;</b>이름</td>
+            <td colspan="3" align="left" style="padding: 10px;">
+              <input type="text" id="x_name" value="" name="isNotNull" title="이름" placeholder="이름을 입력하세요" />
+            </td>
+          </tr>
+          <tr align="center">
+            <td><b class="star_shape">&#42;</b>전화번호</td>
+            <td colspan="3" align="left" style="padding: 10px; " class="x_hp">
+
+              <input type="tel" id="x_hp" name ="isNotNull" style="ime-mode:disabled;" value=""  maxlength="11" title="전화번호"  onkeyup='isNumber(this)' placeholder="전화번호를 입력하세요"/>
+              <!-- <input type="text" id="x_hp1" name ="isNotNull" style="width:20%;ime-mode:disabled;" value=""  maxlength="3" title="전화번호"  onkeyup='isNumber(this)'/> -
+              <input type="text" id="x_hp2" name ="isNotNull" style="width:20%;ime-mode:disabled;" value=""  maxlength="4" title="전화번호" onkeyup='isNumber(this)'/> -
+              <input type="text" id="x_hp3" name ="isNotNull" style="width:20%;ime-mode:disabled;" value=""  maxlength="4" title="전화번호" onkeyup='isNumber(this)'/> -->
+
+            </td>
+          </tr>
+          <tr align="center">
+            <td><b class="star_shape">&#42;</b>이메일</td>
+
+
+
+
+            <td colspan="3" align="left" style="padding: 10px;">
+
+            <input type="text" id="x_email1" value="" name="isNotNull"  title="이메일" placeholder="이메일을 입력하세요"/>
+             <!--  <input type="text" id="x_email1" style="width:30%;" value="" name="isNotNull"  title="이메일"/>
+              @
+              <input type="text" id="x_email2" style="width:30%;display: none;" value="" />
+              <SELECT id="x_email3" name="isNotNull" title="이메일 상세주소">
+                <option value="">선택</option>
+                <option value="naver">naver.com</option>
+                <option value="hanmail">hanmail.net</option>
+                <option value="hotmail">hotmail.com</option>
+                <option value="daum">daum.net</option>
+                <option value="yahoo">yahoo.co.kr</option>
+                <option value="nate">nate.com</option>
+                <option value="gmail">gmail.com</option>
+                <option value="direct">직접입력</option>
+              </SELECT>
+              <input type="button" id="email_check" value="중복확인"/> -->
+
+
+
+            </td>
+
+
+
+          </tr>
+          <tr align="center">
+            <td>소속</td>
+            <td align="left" style="padding: 10px;">
+              <input type="text" id="x_belong" style="width:95%;" value="" placeholder="소속 회사/학교/단체를 입력하세요"/>
+            </td>
+          </tr>
+          <tr>
+            <td>직급</td>
+            <td align="left" style="padding: 10px;">
+              <input type="text" id="x_rank" style="width:95%;" value="" placeholder="직급을 입력하세요"/>
+            </td>
+          </tr>
+          <tr align="center">
+            <td><b class="star_shape">&#42;</b>직업군</td>
+            <td colspan="3" align="left" style="padding: 10px;">
+              <SELECT id="x_occupation" name="isNotNull" title="직업군">
+                <option value="">선택안함</option>
+                <option value="e-비즈니스(전자상거래/서비스)">e-비즈니스&#40;전자상거래&#47;서비스&#41;</option>
+                <option value="IT하드웨어">IT하드웨어</option>
+                <option value="IT(SW/플랫폼/솔루션/컨설팅)">IT&#40;SW&#47;플랫폼&#47;솔루션&#47;컨설팅&#41;</option>
+                <option value="SI">SI</option>
+                <option value="게임">게임</option>
+                <option value="교육/컨설팅">교육&#47;컨설팅</option>
+                <option value="금융/보험">금융&#47;보험</option>
+                <option value="미디어(언론/광고/엔터테인먼트)">미디어&#40;언론&#47;광고&#47;엔터테인먼트&#41;</option>
+                <option value="보안">보안</option>
+                <option value="서비스업">서비스업</option>
+                <option value="유통/운송업">유통&#47;운송업</option>
+                <option value="의료/제약">의료&#47;제약</option>
+                <option value="전문서비스(법조/세무컨설팅 등)">전문서비스&#40;법조&#47;세무컨설팅 등&#41;</option>
+                <option value="정부/공공기관">정부&#47;공공기관</option>
+                <option value="통신/방송">통신&#47;방송</option>
+                <option value="제조업(중공업/건설/에너지/화학 등)">제조업&#40;중공업&#47;건설&#47;에너지&#47;화학 등&#41;</option>
+                <option value="협회/연구기관">협회&#47;연구기관</option>
+                <option value="학부생/대학원생">학부생&#47;대학원생</option>
+                <option value="etc">기타</option>
+              </SELECT>
+              <div id="job_etc">&#40;<input type="text" id="x_occupation_etc" style="width:70%;" value=""  placeholder="기타 직업군을 입력하세요"/>&#41;</div>
+            </td>
+          </tr>
+          <tr align="center">
+            <td><b class="star_shape">&#42;</b>참여이유</td>
+            <td colspan="3" align="left" style="padding: 10px;">
+
+              <textarea rows="10" id="x_participation_reason" name="isNotNull" title="참여이유" placeholder="컨퍼런스 참여이유를 입력하세요" onkeydown="resize(this)" onkeyup="resize(this)"></textarea>
+
+            </td>
+          </tr>
+          <tr align="center">
+            <td><b class="star_shape">&#42;</b>참여경로</td>
+            <td colspan="3" align="left" style="padding: 10px;" class="x_search_path">
+              <div><input type="radio" name="x_search_path" value="Internet_Advertising">인터넷광고&nbsp;&nbsp;</div>
+              <div><input type="radio" name="x_search_path" value="search">검색&nbsp;&nbsp;</div>
+              <div><input type="radio" name="x_search_path" value="SNS">SNS&nbsp;&nbsp;</div>
+              <div><input type="radio" name="x_search_path" value="friend">지인&nbsp;&nbsp;</div>
+              <div><input type="radio" name="x_search_path" value="newspaper">신문/학술지&nbsp;&nbsp;</div>
+              <div><input type="radio" name="x_search_path" value="etc">기타 <span class="etc_span">&#40;<input type="text" id="x_search_etc" style="width:70%;" value="" placeholder="기타 참여경로를 입력하세요" />&#41;</span></div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+         <!--
+        ***Jquery Selectbox를 이용해서 입력된 <Select> x_occupation 의 Value값 확인***
+
+         <input class="value_Btn" id="value_Btn" type="button" alt="value confirm">
+
+         -->
+
+        </div>
+        <div class="intro_submitWrapper1">
+                  <input class="intro_submitBtn" id="btn_insert" type="image" src="./../image/submit_btn2.png" alt="사전등록">
+        </div>
+        <p class="paragraph_set1 intro_paragraphMargin7">
+              <span class="set4_detail_explain2">&#8251; 개인 정보는 컨퍼런스 접수 및 행사 안내, 행사 후 설문조사 발송, 차회 행사 안내 및 홍보를 위해 수집되는 것으로 컨퍼런스 종료 후 한 달간 개인정보 보관 후 삭제됨을 알려드립니다&#46;<br>
+              &#40;단, 차후 행사를 위해 직업군, 이메일 정보는 1년 보관 후 폐기합니다&#41;</span>
+        </p>
+      </article>
+    </section>
+    <footer class="bg_blue">
+        <div class="footer_container">
+            <img class="Things_nineLogo" alt="Things nine logo" src="./../image/foot_logo.png" width="151" height="42">
+            <div class="context">
+                <p>
+                Tel &#58; 02&#45;587&#45;0085 &#124; <span>Email &#58; official&#46;things9&#64;gmail&#46;com</span><br>
+                Address &#58; 서울특별시 강남구 강남대로 476 Urbanhive 13층 &#40;주&#41;팅스나인<br>
+                &#169; 2017&#46; Things9 &#124; All rights reserved&#46;<br>
+               </p>
+               <p>
+               Tel &#58; 02&#45;587&#45;0085<br>
+                <span>Email &#58; official&#46;things9&#64;gmail&#46;com</span><br>
+                Address &#58; 서울특별시 강남구 강남대로 476 Urbanhive 13층 &#40;주&#41;팅스나인<br>
+                &#169; 2017&#46; Things9 &#124; All rights reserved&#46;<br>
+               </p>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
