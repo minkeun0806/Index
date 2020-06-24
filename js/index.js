@@ -86,6 +86,12 @@ $(document).ready(function() {
 		else if(portfolioNo == 03) {
 			location.href='./views/Portfolio2_index.html';
 		}
+		else if(portfolioNo == 04) {
+			location.href='./views/Portfolio4_index.html';
+		}
+		else if(portfolioNo == 05) {
+			location.href='./views/Portfolio5_index.html';
+		}
     });
 
 
@@ -139,6 +145,8 @@ function resizeLayout() {
 		$('section').height(600);
 	}else{
 		$('.title_area').css('top', '20%');
-		$('section').height($(window).height());
+		$('section:nth-of-type(1)').height($(window).height());
+		$('section:nth-of-type(3)').height($(window).height());
+		$('section:nth-of-type(2)').height($('.portfolio_area').height() + 300);
 	};
 };

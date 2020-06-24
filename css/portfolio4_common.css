@@ -1,0 +1,304 @@
+@charset "utf-8";
+/*reset*/
+*{margin:0;padding:0;}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html{overflow-x: hidden;}
+
+/* HTML5 display-role reset for older browsers & other settings */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-family: '나눔고딕', Arial, sans-serif;
+    line-height: 1.3em;
+	color: #333;
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	outline: transparent;
+}
+
+section {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+section:nth-of-type(1){background: url("../img/Portfolio_Ver2/1_obj_pattern.png") 0 0px repeat;}
+
+section:nth-of-type(2), section:nth-of-type(3){ top: -5px; }
+
+section:nth-of-type(2){
+	height: auto;
+	background-image: url("../img/Portfolio_Ver2/2_obj_background.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+	z-index: 4;
+}
+
+section:nth-of-type(4){ top: -10px;
+	/*background-image: url("../제목 없음-1.jpg");*/
+ }
+
+/*********************font define*********************/
+
+ /* web font and local font face define start */
+
+ @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+ /* Yoon Gothic 700 Start */
+ @font-face{
+ 	font-family:YoonGothic710;
+ 	src:url(../fonts/YoonGothic710.otf) format("opentype"),
+ 	    url(../fonts/YoonGothic710.eot) format("embedded-opentype");
+ 	font-style:normal;
+ }
+
+ @font-face{
+ 	font-family:YoonGothic720;
+ 	src:url(../fonts/YoonGothic720.otf) format("opentype"),
+ 	    url(../fonts/YoonGothic720.eot) format("embedded-opentype");
+ 	font-style:normal;
+ }
+
+ @font-face{
+ 	font-family:YoonGothic730;
+ 	src:url(../fonts/YoonGothic730.otf) format("opentype"),
+ 	    url(../fonts/YoonGothic730.eot) format("embedded-opentype");
+ 	font-style:normal;
+ }
+
+ @font-face{
+ 	font-family:YoonGothic740;
+ 	src:url(../fonts/YoonGothic740.otf) format("opentype"),
+ 	    url(../fonts/YoonGothic740.eot) format("embedded-opentype");
+ 	font-style:normal;
+ }
+
+ @font-face{
+ 	font-family:YoonGothic750;
+ 	src:url(../fonts/YoonGothic750.otf) format("opentype"),
+ 	    url(../fonts/YoonGothic750.eot) format("embedded-opentype");
+ 	font-style:normal;
+ }
+
+ @font-face{
+ 	font-family:YoonGothic760;
+ 	src:url(../fonts/YoonGothic760.otf) format("opentype"),
+ 	    url(../fonts/YoonGothic760.eot) format("embedded-opentype");
+ 	font-style:normal;
+ }
+
+ @font-face{
+ 	font-family:YoonGothic770;
+ 	src:url(../fonts/YoonGothic770.otf) format("opentype"),
+ 	    url(../fonts/YoonGothic770.eot) format("embedded-opentype");
+ 	font-style:normal;
+ }
+
+ @font-face{
+ 	font-family:YoonGothic780;
+ 	src:url(../fonts/YoonGothic780.otf) format("opentype"),
+ 	    url(../fonts/YoonGothic780.eot) format("embedded-opentype");
+ 	font-style:normal;
+ }
+
+ @font-face{
+ 	font-family:YoonGothic790;
+ 	src:url(../fonts/YoonGothic790.otf) format("opentype"),
+ 	    url(../fonts/YoonGothic790.eot) format("embedded-opentype");
+ 	font-style:normal;
+ }
+ /* Yoon Gothic 700 End */
+
+ @font-face{
+ 	font-family:SandolShinmoonjeabiLight;
+ 	src:url(../fonts/SandolShinmoonjeabi_Light.ttf) format("truetype"),
+ 	    url(../fonts/SandolShinmoonjeabi_Light.eot) format("embedded-opentype");
+ 	font-style:normal;
+ }
+
+ @font-face{
+ 	font-family:YoonMyeongjo;
+ 	src:url(../fonts/YoonMyeongjo330.woff) format("woff"),
+ 	    url(../fonts/YoonMyeongjo330.eot) format("embedded-opentype");
+ 	font-style:normal;
+ }
+
+  @font-face{
+ 	font-family:Bodoni;
+ 	src:url(../fonts/BODONI.eot) format("embedded-opentype"),
+ 	    url(../fonts/BodoniStd.otf) format("opentype");
+ 	font-style:normal;
+ }
+
+ @font-face{
+ 	font-family:BodoniStdItalic;
+ 	src:url(../fonts/BodoniStd-Italic.otf) format("opentype"),
+ 	    url(../fonts/BodoniStd-Italic.eot) format("embedded-opentype");
+ 	font-style:normal;
+ }
+
+ @font-face{
+ 	font-family:HeirofLightRegular;
+ 	src:url(../fonts/HeirofLightRegular.ttf) format("truetype"),
+ 	    url(../fonts/HeirofLightRegular.eot) format("embedded-opentype");
+ 	font-style:normal;
+ }
+
+ @font-face{
+ 	font-family:YoonGothic250;
+ 	src:url(../fonts/YoonGothic250.TTF) format("truetype"),
+ 	    url(../fonts/YoonGothic250.eot) format("embedded-opentype");
+ 	font-style:normal;
+ }
+
+ @font-face{
+ 	font-family:JejuGothic;
+ 	src:url(../fonts/JejuGothic.ttf) format("truetype"),
+ 	    url(../fonts/JejuGothic.eot) format("embedded-opentype");
+ 	font-style:normal;
+ }
+
+ /* web font and local font face define end */
+
+ /* header and descriptions font set define start */
+
+ /*
+  * cf1) font size - px, pt, em, % 계산 방법
+  * px = pt * 96 / 72
+  * pt = px * 0.75
+  * em = pt / 12
+  * % = pt * 100 / 12
+  *
+  * cf2) 자간과 커닝은 모두 현재 문자 크기에 상대적인 측정 단위인 1/1000em으로 측정됨 ( 1 = 1/1000em )
+  */
+
+ /* h1 tag - 프로모션 사이트의 상단 페이지 타이틀 텍스트로 사용
+  * 사용 font : HeirofLightRegular[빛의 계승자 폰트](폰트 연결이 안될 경우 나눔고딕, Arial, sans-serif 사용)
+  */
+ h1 {
+ 	display: inline-block;
+ 	position: absolute;
+ 	top: 43.8%;
+ 	-ms-transform: translateY(-50%);
+ 	-moz-transform: translateY(-50%);
+ 	-webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+	font-family: 'HeirofLightRegular', '나눔고딕', Arial, sans-serif;
+	color: #303030;
+	z-index: 3;
+ }
+
+  /* h2 tag - 프로모션 사이트의 상단 페이지 타이틀 텍스트 중 전시기간 표기
+  * 사용 font : SandolShinmoonjeabiLight[산돌신문제비 폰트](폰트 연결이 안될 경우 빛의 계승자, 나눔고딕, Arial, sans-serif 사용)
+  */
+ h2 {
+ 	display: inline-block;
+ 	position: absolute;
+ 	top: 69.7%;
+ 	-ms-transform: translateY(-55%);
+ 	-moz-transform: translateY(-55%);
+ 	-webkit-transform: translateY(-55%);
+    transform: translateY(-55%);
+	font-family: 'SandolShinmoonjeabiLight', 'HeirofLightRegular', '나눔고딕', sans-serif;
+	color: #303030;
+	z-index: 3;
+ }
+
+ h3 {
+ 	margin-bottom: 10.5%;
+ 	/*margin-bottom: 150px;*/
+ 	font-size: 3.8vw;
+ 	font-weight: 800;
+ 	font-family: 'YoonGothic250', '나눔고딕', Arial, sans-serif;
+ }
+
+ h4 {
+	display: inline-block;
+	position: absolute;
+	font-size: 3.8vw;
+	font-weight: 800;
+	color: #404040;
+	font-family: 'SandolShinmoonjeabiLight', '나눔고딕', Arial, sans-serif;
+	top: 34.3%;
+	left: 37%;
+	z-index: 4;
+	letter-spacing: 7px;
+	line-height: 143%;
+ }
+
+ /* header and descriptions font set define end */
+
+
+/*********************float*********************/
+
+.float_l {float: left;}
+
+.float_r {float: right;}
+
+/*********************margin*********************/
+
+
+
+/*********************border*********************/
+
+
+
+/*********************background color*********************/
+
+.bg_white {background-color: #fff;}
+
+.bg_black {background-color: #000;}
+
+/*********************font color*********************/
+
+.ft_white {color: #fff;}
+
+.ft_black {color: #000;}
+
+/*********************background*********************/
+
+/*********************media query*********************/
+@media screen and (max-width: 800px){ h4 {font-size: 6.2vw;} }

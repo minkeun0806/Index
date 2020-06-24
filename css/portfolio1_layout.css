@@ -1,0 +1,121 @@
+/*********************Header*********************/
+
+.header_Logo, .footer_Logo{
+	display: block;
+	float: left;
+	width:159px;
+	background: url("../img/Portfolio_Ver1/20190415040055_a1c2.jpg") center center no-repeat;
+}
+
+.header_Input_Container{
+	display: block;
+	position: absolute;
+	float: left;
+	margin-top: 40px;
+	margin-left: 33.4%;
+    bottom: 41px;
+    width: 430px;
+    height: 46px;
+    border: 2px solid #882175;
+}
+
+.header_Input_Container input{
+	outline: 0;
+	display: inline-block;
+	width: 378px;
+	height: 30px;
+	padding: 0;
+	border: 0;
+	font-size: 14px;
+	vertical-align: top;
+	padding: 8px 42px 8px 10px;
+}
+
+.header_Right_Menu_Container{
+	float: right;
+	display: block;
+	margin-top: 50px;
+}
+
+.header_Right_Menu_Container div{float: left;}
+
+.header_Right_Menu_Container div::after,
+.footer_Menu_Container span::after,
+footer address span::after{
+    content: '';
+    margin: 4px 12px 0px 12px;
+    width: 1px;
+}
+
+.header_Right_Menu_Container div::after{
+	display: block;
+	float: right;
+	height: 13px;
+	background-color: #666;
+}
+
+.header_Right_Menu_Container div:last-child::after{margin: 0;width: 0;}
+
+.header_Right_Menu_Container div a{
+	font-family: '나눔고딕', Arial, sans-serif;
+	display: inline-block;
+	font-size: 0.813em;
+	letter-spacing: -0.05em;
+	color: #666;
+}
+
+.header_Right_Menu_Container div a:hover{color: #898989;}
+
+/*********************Header*********************/
+
+/*********************Main Page*********************/
+
+.Product_Thumbnail_Container{
+	display: block;
+	float: left;
+	width: 33%;
+	height: 460px;
+	background-color: purple;
+}
+
+.Product_Thumbnail_Container:nth-of-type(2), .Product_Thumbnail_Container:nth-of-type(3n+2){width: 34%;}
+
+/*********************Main Page*********************/
+
+/*********************Footer*********************/
+
+.footer_Logo{
+	height: 153px;
+	margin-right: 20px;
+}
+
+.footer_Container{
+	display: inline-block;
+	float: left;
+}
+
+.footer_Menu_Container{
+	overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.footer_Company_Type, .footer_Copyright{overflow: hidden}
+
+.footer_Menu_Container span, .footer_Menu_Container span a{display: inline-block;}
+.footer_Menu_Container span, .footer_Menu_Container span::after{float: left;}
+.footer_Menu_Container span a{color: #666;}
+.footer_Menu_Container span:nth-of-type(1), .footer_Company_Type{font-weight: 800;}
+.footer_Menu_Container span a:hover{color: #8c8c8c;}
+
+.footer_Menu_Container span::after,
+footer address span::after{
+	height: 12px;
+	background-color: #666;
+}
+
+.footer_Menu_Container span:nth-of-type(1)::after,
+footer address span:nth-of-type(1)::after,
+footer address span:nth-of-type(3)::after,
+footer address span:nth-of-type(6)::after{margin: 0;width: 0;}
+
+/*********************Footer*********************/

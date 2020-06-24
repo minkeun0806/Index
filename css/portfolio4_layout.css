@@ -1,0 +1,294 @@
+/***** 공통 설정 *****/
+.logo, .logo_Context, .menu_Container_Pc, .etc_Menu_Container{ position: fixed; }
+
+.title_VerticalLine1, .title_VerticalLine2, .title_VerticalLine3, .titleimagewrapper, .titleimagewrapper img, .title_context1, .title_context2, .lower_ScrollButton, .contextimagewrapper1, .contextimagewrapper2, .contextimagewrapper3{ position: absolute; }
+
+.titleimagewrapper img, .contextimagewrapper img, .contextimagewrapper3 img, section:nth-of-type(2), .summary_Container, section:nth-of-type(3) p{
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.titleimagewrapper, .titleimagewrapper img, .contextimagewrapper, .contextimagewrapper img{
+	display:block;
+	height: auto;
+}
+
+.titleimagewrapper img, .contextimagewrapper img{ width: 100%; }
+
+/***** 상단 로고 및 로고 컨텍스트 내역 *****/
+.logo{
+	display: inline-block;
+	width: 186px;
+	height: 44px;
+	top: 52px;
+	background: url("../img/Portfolio_Ver2/1_obj_logo.png") 0 0px no-repeat;
+	z-index: 99;
+}
+
+.logo_Context{
+	display: inline-block;
+	top: 104px;
+	color: #6e5643;
+	font-size : 1.08em;
+	font-family: 'Bodoni', '나눔고딕', Arial, sans-serif;
+	z-index: 99;
+}
+
+/***** 왼쪽 메뉴 및 공유, 언어선택 내역 *****/
+.menu_Container_Pc{
+	display: inline-block;
+	padding : 10px;
+	top: 48.9%;
+	-ms-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 99;
+}
+
+ /* class menu_Container_Pc span - Pc판 ui에서의 메뉴 텍스트 표기
+  * 사용 font : BodoniStdItalic[Bodoni 폰트, Italic](폰트 연결이 안될 경우 나눔고딕, Arial, sans-serif 사용)
+  */
+.menu_Container_Pc span{
+	font-size: 1.16em;
+	font-family: 'BodoniStdItalic', '나눔고딕', Arial, sans-serif;
+	color:#8f7d73;
+}
+.menu_Container_Pc_Obj1{
+	width: 45px;
+	height: 2px;
+	background-color:#8e7d72;
+	margin-top:10px;
+}
+.menu_Container_Pc_Obj2{
+	width: 23px;
+	height: 2px;
+	background-color:#8e7d72;
+	margin-top:8px;
+}
+
+.etc_Menu_Container{
+	display: inline-block;
+	bottom: 126px;
+	-ms-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	z-index: 99;
+}
+
+.etc_Menu_Container span{
+	float: left;
+	font-size: 1.16em;
+}
+
+.etc_Menu_Container span:nth-of-type(2){
+	color:#8e7d72;
+	margin: 0 20px;
+}
+
+.menu_Share, .menu_Language{
+	font-family: 'BodoniStdItalic', '나눔고딕', Arial, sans-serif;
+	cursor: pointer;
+	color:#868686;
+}
+
+/***** 상단 화면 배경 및 오브제 내역 *****/
+
+.title_VerticalLine1, .title_VerticalLine2, .title_VerticalLine3{
+	width: 1px;
+	height: 100%;
+	background-color: #c4af9f;
+	z-index: 1;
+}
+
+.title_VerticalLine3{left: 1592px}
+
+.titleimagewrapper{ z-index: 2; }
+
+.titleimagewrapper4{width: 484px; margin: 635px 0 0 1794px;}
+
+  /* class title_context1 - 프로모션 사이트의 상단 페이지 타이틀 텍스트 중 부제목 표기
+  * 사용 font : YoonGothic760[윤고딕700 폰트](폰트 연결이 안될 경우 나눔고딕, Arial, sans-serif 사용)
+  */
+.title_context1 {
+	display: inline-block;
+	-ms-transform: translateY(-60%);
+	-moz-transform: translateY(-60%);
+	-webkit-transform: translateY(-60%);
+	transform: translateY(-60%);
+	font-family: 'YoonGothic760', '나눔고딕', Arial, sans-serif;
+	color: #666;
+	z-index: 2;
+}
+
+ /* class title_context2, class title_context2_1, class title_context2_2 - 프로모션 사이트의 상단 페이지 타이틀 텍스트 중 부제목 표기*/
+.title_context2 {
+	display: inline-block;
+	color: #9e9e9e;
+	z-index: 2;
+}
+ /* 사용 font : YoonMyeongjo[윤명조330 폰트](폰트 연결이 안될 경우 나눔고딕, Arial, sans-serif 사용)*/
+.title_context2_1{font-family: 'YoonMyeongjo', '나눔고딕', Arial, sans-serif;}
+ /* 사용 font : JejuGothic[제주고딕 폰트](폰트 연결이 안될 경우 나눔고딕, Arial, sans-serif 사용)*/
+.title_context2_2{font-family: 'JejuGothic', '나눔고딕', Arial, sans-serif;}
+
+.lower_ScrollButton{
+	display:inline-block;
+	cursor: pointer;
+	bottom: 12px;
+	z-index: 99;
+}
+
+.lower_ScrollImage{
+	display: block;
+	position: relative;
+	width: 25px;
+	height: 34px;
+	left: 50%;
+	margin-left:-12.5px;
+	margin-bottom: 24px;
+	background: url("../img/Portfolio_Ver2/1_obj4.png") 0 0px no-repeat;
+}
+
+ /* class lower_ScrollContext - 프로모션 사이트의 상단 페이지 scroll down 버튼 글귀
+  * 사용 font : JejuGothic[제주고딕 폰트](폰트 연결이 안될 경우 나눔고딕, Arial, sans-serif 사용)
+  */
+.lower_ScrollContext{
+	font-size: 1.2em;
+	color: #2d2d2d;
+	font-family: 'JejuGothic', '나눔고딕', Arial, sans-serif;
+	font-weight: 900;
+}
+
+/***** 본문 - 1. 전시 개요 *****/
+
+.summary_Container{
+	width: 100%;
+	height: auto;
+	padding: 0 20%;
+	margin: 10% 0 16% 0;
+}
+
+.summary_Numbers{
+	display:inline-block;
+	width: 100%;
+	font-family: 'YoonGothic790', '나눔고딕', sans-serif;
+	font-size: 0.7em;
+}
+
+.summary_HorizontalLine{
+	width:100%;
+	height: 2px;
+	margin-top: 0.6%;
+	margin-bottom: 5%;
+	background-color: #8d8d8d;
+}
+
+.summary_Object, .summary_Context{
+	display:inline-block;
+	float: left;
+	font-family: 'YoonGothic250', '나눔고딕', Arial, sans-serif;
+}
+
+.summary_Object{
+	width: 36%;
+	font-size: 2.4vw;
+ 	font-weight: 800;
+ 	letter-spacing: 0.15em;
+ 	margin-bottom: 28px;
+ 	color: #424242;
+}
+
+.summary_Context{
+	width: 64%;
+	font-size: 1.15em;
+	font-weight: 800;
+	margin-top: -15px;
+	line-height: 2em;
+	color: #5b5b5b;
+	word-break: keep-all;
+}
+
+.summary_Context_Subtext{ color: #727272; }
+
+/***** 본문 - 2. 프롤로그 *****/
+
+.contextimagewrapper1{ width: 67.3%; z-index: 1; top: -1%; right: -0.62%; }
+.contextimagewrapper2{ width: 25.3%; z-index: 2; bottom: 11.3%; left: 16.4%; }
+
+section:nth-of-type(3) p{
+	display: inline-block;
+	position: absolute;
+	width: 38%;
+	padding-right: 10%;
+	top: 62%;
+	left: 54%;
+	font-family: 'YoonGothic750', '나눔고딕', Arial, sans-serif;
+	font-size: 1em;
+	z-index: 4;
+	color: #8a8a8a;
+	letter-spacing: 0.02em;
+	line-height: 1.8em;
+	word-break: keep-all;
+}
+
+section:nth-of-type(3) p span{ color: #b0b0b0; }
+
+/***** 본문 - 3. 실제하는 산수를 그리다 *****/
+
+.contextimagewrapper3{
+	width: 66.6%;
+	height: 106%;
+	top: -6%;
+    right: 0;
+}
+
+.contextimagewrapper3 img{
+	display:block;
+	width: 100%;
+	height: 100%;
+}
+
+/***** 본문 - 4. 화가, 그곳에서 스캐치하다 *****/
+
+
+
+/***** 본문 - 5. 실경을 재단하다 *****/
+
+
+
+/***** 본문 - 6. 실경을 뛰어넘다 *****/
+
+
+
+/***** 본문 - 7. 전시 미리보기 *****/
+
+
+
+/***** 본문 - 8. 연계 프로그램 *****/
+
+@media screen and (max-width: 1050px){
+	.summary_Context{ font-size: 1.5vw; margin-top: 0; }
+}
+
+@media screen and (max-width: 930px){
+	section:nth-of-type(3) p{
+		font-size: 1.2vw;
+		line-height: 2.3em;
+	}
+}
+
+@media screen and (max-width: 790px){
+	.summary_Container{
+		padding: 0 10% 0 30%;
+		margin: 10% 0 30% 0;
+	}
+}
+
+@media screen and (max-width: 642px){ .summary_Context{ word-break: break-all; } }
+
+@media screen and (max-width: 580px){section:nth-of-type(3) p{line-height: 3em;}}
