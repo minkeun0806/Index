@@ -108,7 +108,9 @@ footer address span, footer address span::after{
 section{
 	margin-top: 50px;
 	margin-bottom: 50px;
-	background-color: gray;
+	border-left: 1px solid #e7e8ea;
+	border-right: 1px solid #e7e8ea;
+	border-bottom: 1px solid #e7e8ea;
 }
 
 section:nth-of-type(1){margin-top: unset;}
