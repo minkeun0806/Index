@@ -228,3 +228,17 @@ footer address span:nth-of-type(3)::after,
 footer address span:nth-of-type(6)::after{margin: 0;width: 0;}
 
 /*********************Footer*********************/
+
+/*********************media query*********************/
+
+@media screen and (max-width: 1128px){
+	.Product_Thumbnail_Container{
+		width:50%;
+		padding: 13px 16px;
+		border-right: 1px solid #e7e8ea;
+	}
+
+	.Product_Thumbnail_Container:nth-of-type(2n){ border-right: 0; }
+}
+
+/*********************media query*********************/
