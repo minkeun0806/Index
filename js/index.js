@@ -142,7 +142,9 @@ function resizeLayout() {
 	//$('video').width($(window).width());
 	if($(window).height() <= 600){
 		$('.title_area').css('top', '10%');
-		$('section').height(600);
+		$('section:nth-of-type(1)').height(600);
+		$('section:nth-of-type(3)').height(600);
+		$('section:nth-of-type(2)').height($('.portfolio_area').height() + 300);
 	}else{
 		$('.title_area').css('top', '20%');
 		$('section:nth-of-type(1)').height($(window).height());
