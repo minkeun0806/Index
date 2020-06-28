@@ -1,5 +1,7 @@
 /*********************Header*********************/
 
+.header_Left_Menu_Button, .header_Right_Login_Button, .header_Right_Search_Button{ display: none; }
+
 .header_Logo, .footer_Logo{
 	display: block;
 	float: left;
@@ -7,14 +9,14 @@
 	background: url("../img/Portfolio_Ver1/20190415040055_a1c2.jpg") center center no-repeat;
 }
 
+.header_Logo{height: 128px;}
+
 .header_Input_Container{
 	display: block;
 	position: absolute;
-	/*float: left;*/
 	float: right;
 	margin-top: 40px;
 	right: 30%;
-	/*margin-left: 33.4%;*/
     bottom: 41px;
     width: 430px;
     height: 46px;
@@ -24,13 +26,16 @@
 .header_Input_Container input{
 	outline: 0;
 	display: inline-block;
-	width: 378px;
-	height: 30px;
+	width: 100%;
+	height: 46px;
 	padding: 0;
 	border: 0;
 	font-size: 14px;
 	vertical-align: top;
 	padding: 8px 42px 8px 10px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 
 .header_SearchButton{
@@ -56,8 +61,7 @@
 .header_Right_Menu_Container div{float: left;}
 
 .header_Right_Menu_Container div::after,
-.footer_Menu_Container span::after,
-footer address span::after{
+.footer_Menu_Container span::after{
     content: '';
     margin: 4px 12px 0px 12px;
     width: 1px;
@@ -81,6 +85,52 @@ footer address span::after{
 }
 
 .header_Right_Menu_Container div a:hover{color: #898989;}
+
+.category_Bar{
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+	padding: 0 32px;
+	border-top: 1px solid #c1bebe;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.category_Button{
+	float: left;
+	width: 185px;
+	height: 50px;
+	border-left: 1px solid #c1bebe;
+	border-right: 1px solid #c1bebe;
+	border-bottom: 1px solid #c1bebe;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	color: #333;
+}
+
+.category_Button span, .category_Button div{
+	display: inline-block;
+	float: left;
+}
+
+.category_Button span{
+	margin-top: 15px;
+	font-weight: bold;
+}
+
+.category_Button_Icon{
+	width: 22px;
+	margin: 16px 6px 16px 16px;
+}
+
+.category_Button_Sprite{
+	width: 20px;
+	height: 2px;
+	margin: 2px 0;
+	background-color: #882175;
+}
 
 /*********************Header*********************/
 
@@ -174,7 +224,10 @@ footer address span::after{
 	overflow: hidden;
 	font-size: 22px;
 	line-height: 26px;
+	color: #363636;
 }
+
+.product_Title, .product_price1{ color: #363636; }
 
 .product_Title_Words{white-space: nowrap;}
 
@@ -194,6 +247,7 @@ footer address span::after{
 .product_price2{
 	font-size: 22px;
 	color: #e7058d;
+	font-weight: 600;
 }
 
 .lg_Best_Title{
@@ -231,16 +285,12 @@ footer address span::after{
 .footer_Menu_Container span:nth-of-type(1), .footer_Company_Type{font-weight: 800;}
 .footer_Menu_Container span a:hover{color: #8c8c8c;}
 
-.footer_Menu_Container span::after,
-footer address span::after{
+.footer_Menu_Container span::after{
 	height: 12px;
 	background-color: #666;
 }
 
-.footer_Menu_Container span:nth-of-type(1)::after,
-footer address span:nth-of-type(1)::after,
-footer address span:nth-of-type(3)::after,
-footer address span:nth-of-type(6)::after{margin: 0;width: 0;}
+.footer_Menu_Container span:nth-of-type(1)::after{margin: 0;width: 0;}
 
 /*********************Footer*********************/
 
@@ -256,6 +306,63 @@ footer address span:nth-of-type(6)::after{margin: 0;width: 0;}
 	.Product_Thumbnail_Container:nth-of-type(2n){ border-right: 0; }
 
 	.Product_Thumbnail_Container:nth-last-of-type(3){ border-bottom: 0; }
+}
+@media screen and (max-width: 960px){
+	.header_Input_Container{ width: 40%; }
+}
+
+@media screen and (max-width: 799px){
+	.header_Logo{
+		position: absolute;
+		left: 50%;
+		margin-left: -100px;
+		width: 200px;
+		height: 52px;
+		background: url(../img/Portfolio_Ver1/logo_bestShopMall_M.jpg) center center no-repeat;
+		background-size: 200px auto;
+	}
+
+	.header_Input_Container, .header_Right_Menu_Container{ display: none; }
+
+	.header_Left_Menu_Button{
+		display: block;
+		float: left;
+		width: 52px;
+		height: 52px;
+		cursor: pointer;
+	}
+
+	.header_Left_Menu_Button_Sprite{
+		display: block;
+		width: 22px;
+		height: 2px;
+		margin: 11px 15px;
+		background-color: #882175;
+	}
+
+	.header_Right_Login_Button{
+		display: inline-block;
+		float: right;
+		cursor: pointer;
+		background: url(../img/Portfolio_Ver1/icon_login.png) no-repeat center;
+		width: 52px;
+		height: 52px;
+		background-size: 22px;
+	}
+
+	.header_Right_Search_Button{
+		display: inline-block;
+		float: right;
+		cursor: pointer;
+		background: url(../img/Portfolio_Ver1/icon_search.png) no-repeat center;
+		width: 52px;
+		height: 52px;
+		background-size: 22px;
+	}
+
+	.category_Bar{
+		border-top: 0;
+	}
 }
 
 @media screen and (max-width: 590px){
@@ -317,10 +424,11 @@ footer address span:nth-of-type(6)::after{margin: 0;width: 0;}
 
 	.product_price2{
 		font-size: 14px;
+		font-weight: normal;
 	}
 
 	.product_price1 strong, .product_price2 strong{
-		font-weight: 800;
+		font-weight: bold;
 	}
 }
 
