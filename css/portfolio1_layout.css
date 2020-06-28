@@ -33,6 +33,20 @@
 	padding: 8px 42px 8px 10px;
 }
 
+.header_SearchButton{
+	position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+}
+
+.search_Icon{
+	width: 20px;
+    height: 17px;
+    margin: 15px 15px;
+    background: url(./../img/Portfolio_Ver1/str_ico01_bs.png) -103px -4px no-repeat;
+}
+
 .header_Right_Menu_Container{
 	float: right;
 	display: block;
@@ -145,6 +159,8 @@ footer address span::after{
 	height: auto;
 }
 
+.best_Item_Label{ display: none; }
+
 .product_Title, .product_ModelNo, .product_price1, .product_price2{
 	display:inline-block;
 	width: 100%;
@@ -177,7 +193,7 @@ footer address span::after{
 
 .product_price2{
 	font-size: 22px;
-	color: #eb115d;
+	color: #e7058d;
 }
 
 .lg_Best_Title{
@@ -238,29 +254,57 @@ footer address span:nth-of-type(6)::after{margin: 0;width: 0;}
 	}
 
 	.Product_Thumbnail_Container:nth-of-type(2n){ border-right: 0; }
+
+	.Product_Thumbnail_Container:nth-last-of-type(3){ border-bottom: 0; }
 }
 
 @media screen and (max-width: 590px){
 
-	.img_Badge_Container{display: none;}
+	.img_Badge_Container{
+		top: 10px;
+		left: 16px;
+	}
+
+	.img_Badge_Container span{
+		display: inline-block;
+		position: relative;
+		width: 30px;
+		height: 34px;
+		padding-top: 9px;
+		font-size: 14px;
+		background-size: 30px auto;
+	}
+
+	.img_Badge_Container span:after{ display: none; }
+
 	.Product_Thumbnail_Container img{
 		width: 123px;
 		margin: 0 auto;
 	}
 
-	.product_Thumbnail_Context_Container{text-align: left;}
+	.product_Thumbnail_Context_Container{ text-align: left; }
+
+	.best_Item_Label{
+		display: block;
+		width: 100%;
+		height: 13px;
+		margin-top: 10px;
+		background: url("../img/Portfolio_Ver1/tag_best.png") 0 0 no-repeat;
+		background-size: 38px auto;
+	}
 
 	.product_Title{
-		position: absolute;
-		overflow: hidden;
-		font-size: 14px;
+		position: static;
+		margin-top: 10px;
+		font-size: 13px;
+		font-weight: 600;
 		line-height: 1.3rem;
 	}
 
 	.product_Title_Words{white-space: nowrap;}
 
 	.product_ModelNo{
-		margin-top: 60px;
+		margin-top: 20px;
 		font-size: 11px;
 		margin-bottom: 6px;
 	}
@@ -273,7 +317,10 @@ footer address span:nth-of-type(6)::after{margin: 0;width: 0;}
 
 	.product_price2{
 		font-size: 14px;
-		color: #eb115d;
+	}
+
+	.product_price1 strong, .product_price2 strong{
+		font-weight: 800;
 	}
 }
 
