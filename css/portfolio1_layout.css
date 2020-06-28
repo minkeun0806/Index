@@ -108,6 +108,7 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	color: #333;
+	cursor: pointer;
 }
 
 .category_Button span, .category_Button div{
@@ -122,7 +123,7 @@
 
 .category_Button_Icon{
 	width: 22px;
-	margin: 16px 6px 16px 16px;
+	margin: 16px 12px 16px 16px;
 }
 
 .category_Button_Sprite{
@@ -130,6 +131,20 @@
 	height: 2px;
 	margin: 2px 0;
 	background-color: #882175;
+}
+
+.category_Bar_RightButton{
+	display: inline-block;
+	float: right;
+	height: 100%;
+	text-align: center;
+	padding: 0 25px;
+	line-height: 49px;
+	letter-spacing: 0;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+	color: #333;
 }
 
 /*********************Header*********************/
