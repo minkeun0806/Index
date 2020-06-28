@@ -481,4 +481,25 @@
 	}
 }
 
+@media screen and (max-width: 471px){
+	.product_Title{ letter-spacing: -0.3vw; }
+}
+
+@media screen and (max-width: 438px){
+	.product_Title{ font-size: 0.9028vw; }
+
+	.product_ModelNo{
+		margin-top: 60px;
+		font-size: 0.8333vw;
+		margin-bottom: 6px;
+	}
+
+	.product_price1{
+		font-size: 0.8333vw;
+		margin-bottom: 20px;
+	}
+
+	.product_price2{ font-size: 0.9722vw; }
+}
+
 /*********************media query*********************/
