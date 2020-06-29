@@ -281,6 +281,24 @@
 
 /*********************Footer*********************/
 
+.main_Board_Bar{
+	display: block;
+	width: 100%;
+	height: auto;
+	color: #666;
+	padding: 26px 0;
+	background-color: #f5f5f5;
+	/*overflow: hidden; */
+	/*white-space: nowrap*/
+	/*text-overflow: ellipsis;*/
+}
+
+.notice_Thumbnail_Container{}
+
+.qna_Thumbnail_Container{}
+
+.serviceCenter_Thumbnail_Container{}
+
 .footer_Logo{
 	height: 153px;
 	margin-right: 20px;
@@ -485,7 +503,7 @@
 	.product_Title{ letter-spacing: -0.3vw; }
 }
 
-@media screen and (max-width: 438px){
+@media screen and (max-width: 300px){
 	.product_Title{ font-size: 0.9028vw; }
 
 	.product_ModelNo{
