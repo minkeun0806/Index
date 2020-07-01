@@ -1,9 +1,13 @@
 $(document).ready(function() {
-	$(window).scrollLeft(-100);
+	/*****다큐먼트 준비 시 레이아웃 설정 시작*****/
+	$(window).scrollLeft(-100);//스크롤 무조건 왼쪽 끝 정렬
+
 	if($('section:nth-of-type(4)').width() <= $('section:nth-of-type(4)').height()){
 		$('section:nth-of-type(4)').css('height', $('section:nth-of-type(4)').width());
+		//$('.contextTitle1').css('bottom', '20%');
 	}else{
 		$('section:nth-of-type(4)').css('height', '100%');
+		//$('.contextTitle1').css('bottom', '42%');
 	};
 
 
@@ -11,7 +15,7 @@ $(document).ready(function() {
 	$('.title_Section').addClass('section_Active');
 	if($(window).width() <= 1590){
 		$('.title_Section').addClass('title_Layout1');
-
+/*
 		$(".div").animate({
 			left: '250px',
 			opacity: '0.5',
@@ -19,9 +23,7 @@ $(document).ready(function() {
 			width: '150px',
 			'margin':'0 0 0 0'
 		});
-
-
-
+*/
 		resizeLayout();
 		$('.titleimagewrapper1').css({'width':'30.45%','float':'left', 'margin':$(window).height() - $('.titleimagewrapper1 img').height() + (($('.titleimagewrapper1 img').height() / 100) * 28.9) + "px 0px 0px -" + ($('.titleimagewrapper1 img').width() / 100) * 87.2 + 'px'});
 		$('.titleimagewrapper3').css({'width':'30.45%','float':'right', 'margin':$(window).height() - $('.titleimagewrapper3 img').height() + (($('.titleimagewrapper3 img').height() / 100) * 7.4) + "px 4.38% 0 0", 'right': '0'});
@@ -33,8 +35,9 @@ $(document).ready(function() {
 		resizeLayout();
 		$('.titleimagewrapper3').css({'width':'484px','float':'left', 'margin':'262px 0 0 1036px', 'right': 'auto'});
 	};
+	/*****다큐먼트 준비 시 레이아웃 설정 종료*****/
 
-	/*브라우저 화면 크기 변경 시 레이아웃 리사이징 실행*/
+	/*****브라우저 화면 크기 변경 시 레이아웃 리사이징 실행 시작*****/
 	$(window).on('resize', function(){
 
 		$(window).scrollLeft(-100);
@@ -70,6 +73,7 @@ $(document).ready(function() {
 			};
 		};
 	});
+	/*****브라우저 화면 크기 변경 시 레이아웃 리사이징 실행 종료*****/
 
 	$(window).scroll(function() {$(window).scrollLeft(-100);});
 });
@@ -78,8 +82,10 @@ $(document).ready(function() {
 function resizeLayout() {
 	if($('section:nth-of-type(4)').width() <= $('section:nth-of-type(4)').height()){
 		$('section:nth-of-type(4)').css('height', $('section:nth-of-type(4)').width());
+		//$('.contextTitle1').css('bottom', '20%');
 	}else{
 		$('section:nth-of-type(4)').css('height', '100%');
+		//$('.contextTitle1').css('bottom', '42%');
 	};
 	/*상단 화면이 표출될때만 동작*/
 

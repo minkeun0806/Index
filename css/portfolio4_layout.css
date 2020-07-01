@@ -17,6 +17,16 @@
 
 .titleimagewrapper img, .contextimagewrapper img{ width: 100%; }
 
+section:nth-of-type(3) p, section:nth-of-type(4) p{
+	display: inline-block;
+	position: absolute;
+	font-family: 'YoonGothic750', '나눔고딕', Arial, sans-serif;
+	font-size: 1em;
+	color: #8a8a8a;
+	letter-spacing: 0.02em;
+	word-break: keep-all;
+}
+
 /***** 상단 로고 및 로고 컨텍스트 내역 *****/
 .logo{
 	display: inline-block;
@@ -194,6 +204,8 @@
 	font-family: 'YoonGothic250', '나눔고딕', Arial, sans-serif;
 }
 
+.summary_Context_Word{ display: inline-block; }
+
 .summary_Object{
 	width: 36%;
 	font-size: 2.4vw;
@@ -205,7 +217,8 @@
 
 .summary_Context{
 	width: 64%;
-	font-size: 1.15em;
+	font-size: 17px;
+	/*font-size: 1.15em;*/
 	font-weight: 800;
 	margin-top: -15px;
 	line-height: 2em;
@@ -221,19 +234,12 @@
 .contextimagewrapper2{ width: 25.3%; z-index: 2; bottom: 11.3%; left: 16.4%; }
 
 section:nth-of-type(3) p{
-	display: inline-block;
-	position: absolute;
 	width: 38%;
 	padding-right: 10%;
 	top: 62%;
 	left: 54%;
-	font-family: 'YoonGothic750', '나눔고딕', Arial, sans-serif;
-	font-size: 1em;
 	z-index: 4;
-	color: #8a8a8a;
-	letter-spacing: 0.02em;
 	line-height: 1.8em;
-	word-break: keep-all;
 }
 
 section:nth-of-type(3) p span{ color: #b0b0b0; }
@@ -251,6 +257,31 @@ section:nth-of-type(3) p span{ color: #b0b0b0; }
 	display:block;
 	width: 100%;
 	height: 100%;
+}
+
+.contextTitle1{
+	display: inline-block;
+	position: absolute;
+	font-size: 3.8vw;
+	font-weight: 800;
+	color: #404040;
+	font-family: 'SandolShinmoonjeabiLight', '나눔고딕', Arial, sans-serif;
+	z-index: 5;
+	top:42%;
+	/*bottom: 42%;*/
+	padding-left: 134px;
+    left: 14%;
+	letter-spacing: 7px;
+	line-height: 143%;
+}
+
+section:nth-of-type(4) p{
+	width: 100%;
+	top: 9.5%;
+	padding-left: 134px;
+    left: 21.2%;
+	z-index: 4;
+	line-height: 2.3em;
 }
 
 /***** 본문 - 4. 화가, 그곳에서 스캐치하다 *****/
@@ -276,11 +307,17 @@ section:nth-of-type(3) p span{ color: #b0b0b0; }
 }
 
 @media screen and (max-width: 930px){
-	section:nth-of-type(3) p{
+	section:nth-of-type(3) p, section:nth-of-type(4) p{
 		font-size: 1.2vw;
 		line-height: 2.3em;
 	}
+
+	.contextTitle1{
+		left: 5%;
+	}
 }
+
+@media screen and (max-width: 800px){ .contextTitle1 {font-size: 6.2vw;} }
 
 @media screen and (max-width: 790px){
 	.summary_Container{
@@ -289,6 +326,14 @@ section:nth-of-type(3) p span{ color: #b0b0b0; }
 	}
 }
 
+@media screen and (max-width: 654px){
+	.summary_Context{ word-break: break-all; }
+
+	.contextTitle1{
+		left: 0;
+	}
+}
+
 @media screen and (max-width: 642px){ .summary_Context{ word-break: break-all; } }
 
-@media screen and (max-width: 580px){section:nth-of-type(3) p{line-height: 3em;}}
+@media screen and (max-width: 580px){section:nth-of-type(3) p, section:nth-of-type(4) p{line-height: 3em;}}
