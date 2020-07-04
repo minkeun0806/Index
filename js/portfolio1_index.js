@@ -10,5 +10,23 @@ $(document).ready(function() {
 	$(window).on('resize', function(){
 
 	});
+
+	//PC UI 메뉴 hover 이벤트
+	$('.main_Category_Depth1').hover(function() {
+		$(this).children('.main_Category_Depth2').css('display', 'block');
+
+		$(this).children('.main_Category_Depth2')
+			   .children('.main_Category_Depth2_List_Container')
+			   .children('.category_Depth2_List')
+			   .children('.category_Depth2_Context')
+			   .hover(function() {
+			$(this).children('.category_Depth3_List').css('display', 'block');
+		}, function(){
+			$(this).children('.category_Depth3_List').css('display', 'none');
+		});
+
+	}, function(){
+		$(this).children('.main_Category_Depth2').css('display', 'none');
+	});
 });
 
