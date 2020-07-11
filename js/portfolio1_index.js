@@ -12,10 +12,15 @@ $(document).ready(function() {
 		sliderWidth = $('#slider-wrap').width(),
 
 	//automatic slider
-		autoSlider = setInterval(slideRight, 3000),
+		autoSlider = setInterval(slideRight, 5000),
 
 	//Pagination button Role 정의
 		p_role = 0;
+
+	if($(window).width() < 800){
+    	$('#counter').css('top', 60 + $('.wrapper_Scale').height());
+    	$('.btns').css('top', ($('.wrapper_Scale').height() / 2) + 123 - $('.btns').height());
+    };
 
 	/************************** 슬라이드 정의 및 동작 **************************/
     //set width to be 'x' times the number of slides
@@ -65,17 +70,19 @@ $(document).ready(function() {
     //pagination
     pagination();
 
-    // 슬라이드에 마우스 hover 시 왼쪽, 오른쪽 버튼 표출 및 감춤
-    // 슬라이드에 마우스 hover 시 자동 슬라이드 중지
-    $('#slider-wrap').hover(
-      function(){
-      	$(this).addClass('active');
-      	clearInterval(autoSlider);
-      },function(){
-      	$(this).removeClass('active');
-      	autoSlider = setInterval(slideRight, 3000);
-      }
-    );
+	$('#slide_Button').on('click',function(){
+		//멈춤 버튼 클릭 시 동작
+		if($(this).hasClass('slide_Button_Actived') == true){
+			$(this).removeClass('slide_Button_Actived');
+			$(this).addClass('slide_Button_Deactived');
+      		autoSlider = setInterval(slideRight, 5000);
+		//재생 버튼 클릭 시 동작
+		}else{
+			$(this).addClass('slide_Button_Actived');
+			$(this).removeClass('slide_Button_Deactived');
+      		clearInterval(autoSlider);
+		}
+	});
 
     /***********
 	 SLIDE LEFT
@@ -104,6 +111,7 @@ $(document).ready(function() {
 	    pagination();
 	}
 
+	// 슬라이드 하단 Pagination 버튼 클릭 시 이벤트
 	$(".pgButton").on('click', function(){
 		var menuNo = $(this).attr("role");
 
@@ -120,13 +128,11 @@ $(document).ready(function() {
 	    pagination();
     });
 
-
-
 	/************************
 	 //*> OPTIONAL SETTINGS
 	************************/
 	function countSlides(){
-	    $('#counter').html(parseInt(pos) + 1 + ' / ' + totalSlidesCount);
+	    $('#counter').html(parseInt(pos) + 1 + ' / ' + '<span id="txt_total">' + totalSlidesCount + '</span>');
 	}
 
 	function pagination(){
@@ -134,15 +140,33 @@ $(document).ready(function() {
 	    $('#pagination-wrap ul li:eq('+pos+')').addClass('active');
 	}
 
-	/************************** 페이지 하단 연도 표기 **************************/
-	$('#footer_Copyright_Year').html(currentYear);
+	// 슬라이드 왼쪽, 오른쪽 버튼 표기 / 숨김 이벤트
+	$('#slider-wrap').hover(
+    function(){
+    	if($(window).width() < 800){
+    		$('#slider-wrap').addClass('active');
+		};
+    }, function(){
+    	if($(window).width() < 800){
+    		$('#slider-wrap').removeClass('active');
+		};
+    });
 
-
+	/************************** 문서 사이즈 변경 시 동작 **************************/
 	$(window).on('resize', function(){
+		//슬라이드 크기 조절
 		sliderWidth = $('#slider-wrap').width();
 		$('#slider-wrap ul#slider').width(sliderWidth*totalSlidesCount);
 		$('#slider-wrap ul#slider').css('left', -(sliderWidth*pos));
+		if($(window).width() < 800){
+    		$('#slider-wrap').removeClass('active');
+    		$('#counter').css('top', 60 + $('.wrapper_Scale').height());
+    		$('.btns').css('top', ($('.wrapper_Scale').height() / 2) + 123 - $('.btns').height());
+    	};
 	});
+
+	/************************** 페이지 하단 연도 표기 **************************/
+	$('#footer_Copyright_Year').html(currentYear);
 
 	/************************** PC UI 메뉴 hover 이벤트 **************************/
 	$('.main_Category_Depth1').hover(function() {
