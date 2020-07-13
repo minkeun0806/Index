@@ -144,7 +144,7 @@
 }
 
 .category_Menu_Container{
-	display: block;
+	display: none;
 	position: absolute;
 	top: 179px;
 	left: 32px;
@@ -605,7 +605,11 @@
 
 /*********************Main Page*********************/
 
-#lg_Best_Products{ background-color: #f3eeee; }
+#lg_Best_Products{
+	background-color: #f3eeee;
+	padding: 80px 0;
+	margin-top: 80px;
+}
 
 #lg_Best_Products section{ background-color: #fff; }
 
@@ -800,7 +804,41 @@
 
 .footer_Menu_Container span:nth-of-type(1)::after{margin: 0;width: 0;}
 
+#mobile_Copyright,
+#mobile_Address{ display: none; }
+
+
+
 /*********************Footer*********************/
+
+/*********************Privacy Policy & Terms of Use*********************/
+
+.terms_Header{
+	width: 800px;
+	height: 110px;
+	margin: 70px auto 0;
+	background-color: #333;
+	text-align: center;
+}
+
+.terms_Body{
+	width: 800px;
+    padding: 57px 0 70px;
+    margin: 0 auto 70px;
+    background: #fff;
+    border: 1px solid #d2d2d2;
+    border-top: none;
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+}
+
+.terms_Container{ padding: 0 160px; }
+
+/*********************Privacy Policy & Terms of Use*********************/
 
 /*********************media query*********************/
 
@@ -832,6 +870,13 @@
 }
 @media screen and (max-width: 960px){
 	.header_Input_Container{ width: 40%; }
+}
+
+@media screen and (max-width: 894px){
+	.footer_Logo{
+		width: 100%;
+		margin-right: 0;
+	}
 }
 
 @media screen and (max-width: 799px){
@@ -955,6 +1000,73 @@
 	    text-align: center;
 	    position:absolute;
 	    z-index: 8;
+	}
+
+	.notice_Thumbnail_Container,
+	.qna_Thumbnail_Container,
+	.serviceCenter_Thumbnail_Container{ display: none; }
+
+	.footer_Logo, .footer_Container{ display: none; }
+
+	#mobile_Address{
+		display: block;
+		margin-top: 5px;
+		text-align: center;
+	}
+
+	#mobile_Address ul{
+		display: inline-block;
+		padding: 10px;
+		font-size: 11px;
+		letter-spacing: -0.06em;
+		color: #666;
+	}
+
+	#mobile_Address ul li dl{
+		position: relative;
+		padding-left: 90px;
+		text-align: left;
+	}
+
+	#mobile_Address ul li dl dt{
+		position: absolute;
+		left: 0;
+		top: 0;
+		max-width: 80px;
+	}
+
+	#mobile_Copyright{
+		display: inline-block;
+		width: 100%;
+		color: #666;
+		font-size: 12px;
+		line-height: 1.5em;
+		font-size: 13px;
+		border-top: 1px solid #e5e5e5;
+	    padding: 8px 0;
+	    text-align: center;
+	}
+
+	.mobile_Footer_Actived::after,
+	.mobile_Footer_Deactived::after{
+		content: "";
+		display: inline-block;
+		width: 13px;
+		height: 13px;
+		margin: -1px 0 1px 5px;
+		border: 1px solid #999;
+		border-radius: 50%;
+		vertical-align: middle;
+	}
+
+	.mobile_Footer_Actived::after{
+		background: url(../img/Portfolio_Ver1/arrow_accordion_up.png) no-repeat center center;
+		background-size: 60% auto;
+	}
+
+	.mobile_Footer_Deactived::after{
+		background: url(../img/Portfolio_Ver1/arrow_accordion_down.png) no-repeat center center;
+		background-size: 60% auto;
 	}
 }
 

@@ -81,7 +81,7 @@ $(document).ready(function() {
 			$(this).addClass('slide_Button_Actived');
 			$(this).removeClass('slide_Button_Deactived');
       		clearInterval(autoSlider);
-		}
+		};
 	});
 
     /***********
@@ -103,7 +103,7 @@ $(document).ready(function() {
 	*************/
 	function slideRight(){
 	    pos++;
-	    if(pos==totalSlidesCount){ pos = 0; }
+	    if(pos==totalSlidesCount){ pos = 0; };
 	    $('#slider-wrap ul#slider').css('left', -(sliderWidth*pos));
 
 	    //*> optional
@@ -162,11 +162,16 @@ $(document).ready(function() {
     		$('#slider-wrap').removeClass('active');
     		$('#counter').css('top', 60 + $('.wrapper_Scale').height());
     		$('.btns').css('top', ($('.wrapper_Scale').height() / 2) + 123 - $('.btns').height());
+    	}else{
+    		$('footer strong').removeClass('mobile_Footer_Actived');
+			$('footer strong').addClass('mobile_Footer_Deactived');
+    		$('#mobile_Address').css('display', 'none');
     	};
 	});
 
 	/************************** 페이지 하단 연도 표기 **************************/
 	$('#footer_Copyright_Year').html(currentYear);
+	$('#footer_Copyright_Year_Mobile').html(currentYear);
 
 	/************************** PC UI 메뉴 hover 이벤트 **************************/
 	$('.main_Category_Depth1').hover(function() {
@@ -184,5 +189,32 @@ $(document).ready(function() {
 
 	}, function(){
 		$(this).children('.main_Category_Depth2').css('display', 'none');
+	});
+
+	//************************** DOM Script events **************************/
+	$('.category_Button').on('click', function(){
+		//카테고리 버튼 다시 클릭 시 카테고리 1depths 사라짐
+		if($(this).hasClass('category_Menu_Actived') == true){
+			$(this).removeClass('category_Menu_Actived');
+			$('.category_Menu_Container').css('display', 'none');
+		//카테고리 버튼 클릭 시 카테고리 1depths 표출
+		}else{
+			$(this).addClass('category_Menu_Actived');
+			$('.category_Menu_Container').css('display', 'block');
+		};
+	});
+
+	$('footer strong').on('click', function(){
+		//하단 통신판매업자 재 클릭 시 address 사라짐
+		if($(this).hasClass('mobile_Footer_Actived') == true){
+			$(this).removeClass('mobile_Footer_Actived');
+			$(this).addClass('mobile_Footer_Deactived');
+			$('#mobile_Address').css('display', 'none');
+		//하단 통신판매업자 클릭 시 address 표출
+		}else{
+			$(this).removeClass('mobile_Footer_Deactived');
+			$(this).addClass('mobile_Footer_Actived');
+			$('#mobile_Address').css('display', 'block');
+		};
 	});
 });
