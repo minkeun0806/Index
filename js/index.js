@@ -151,4 +151,12 @@ function resizeLayout() {
 		$('section:nth-of-type(3)').height($(window).height());
 		$('section:nth-of-type(2)').height($('.portfolio_area').height() + 300);
 	};
+
+	if($(window).width() <= 496){
+		$('article').height($('.about_area').height() + 100);
+		$('.about_area').css('top', '50px');
+	}else{
+		$('article').height(1200);
+		$('.about_area').css('top', '10%');
+	}
 };

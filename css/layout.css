@@ -216,10 +216,6 @@
 	}
 }
 
-@media all and (max-width:389px) {
-	.profile_area div img {display: none;}
-}
-
 @media all and (max-width:859px) {
 	.portfolio_area div img { display: none; }
 
@@ -280,6 +276,14 @@
 
 @media all and (max-width:528px) { .contact_area h2 { font-size: 1.6em; } }
 
+@media all and (max-width:496px) {
+	.profile_area img{
+		display: inline-block;
+		width: 100%;
+		height: auto;
+	}
+}
+
 @media all and (max-width:477px) {
 	.title_menuArea div {
 		padding: 8px 0;
@@ -298,6 +302,8 @@
 @media all and (max-width:470px) { .contact_area h2 { font-size: 1.4em; } }
 
 @media all and (max-width:414px) { .contact_area h2 { font-size: 1.2em; } }
+
+@media all and (max-width:389px) { .profile_area div img {display: none;} }
 
 @media all and (max-width:360px) { .contact_area h2 span { display: none; } }
 
@@ -327,8 +333,9 @@
 	}
 }
 
-@media all and (max-width:298px) {.profile_area div span:nth-of-type(even) { font-size: 0.8em; } }
+@media all and (max-width:298px) { .profile_area div span:nth-of-type(even) { font-size: 0.8em; } }
 
-@media all and (max-width:257px) {.title_area {top: 10% !important;} }
+@media all and (max-width:257px) { .title_area {top: 10% !important;} }
 
-@media all and (max-width:232px) {.profile_area div span:nth-of-type(even) { font-size: 0.6em; } }
+@media all and (max-width:232px) { .profile_area div span:nth-of-type(even) { font-size: 0.6em; } }
+
