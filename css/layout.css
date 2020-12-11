@@ -105,13 +105,13 @@
 	margin: 0 0 0 -45%;
 }
 
-.font_Subtitle{
+.font_Subtitle {
 	font-size: 3em;
 	font-weight: 900;
 
 }
 
-.font_Subtitle1{ color : #535353;  }
+.font_Subtitle1 { color : #fff;  }
 
 .portfolio_opacity { display: none; }
 
@@ -150,7 +150,7 @@
 
 .profile_area { width: 100%; }
 
-.about_area2, .about_area2 div{ display: none; }
+.about_area2, .about_area2 div { display: none; }
 
 .profile_area div, .about_area2 div {
 	float: left;
@@ -224,7 +224,7 @@
 		height: 300px;
 	}
 
-	.portfolio_opacity{
+	.portfolio_opacity {
 		display: inline-block;
 		visibility: hidden;
 		position: absolute;
@@ -277,7 +277,7 @@
 @media all and (max-width:528px) { .contact_area h2 { font-size: 1.6em; } }
 
 @media all and (max-width:496px) {
-	.profile_area img{
+	.profile_area img {
 		display: inline-block;
 		width: 100%;
 		height: auto;
