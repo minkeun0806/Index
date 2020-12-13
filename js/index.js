@@ -92,6 +92,21 @@ $(document).ready(function() {
 		else if(portfolioNo == 05) {
 			location.href='./views/Portfolio5_index.html';
 		}
+		else if(portfolioNo == 06) {
+			location.href='http://hidr.kr/main.html';
+		}
+		else if(portfolioNo == 07) {
+			location.href='http://xn--3j1bw30bw7gsje.com/';
+		}
+		else if(portfolioNo == 08) {
+			location.href='http://hansongyeeobgyn.net/';
+		}
+		else if(portfolioNo == 09) {
+			location.href='http://yonseirenew.co.kr/';
+		}
+		else if(portfolioNo == 10) {
+			location.href='http://shesgood.net/ad_labia.html';
+		}
     });
 
 
