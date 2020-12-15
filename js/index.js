@@ -15,15 +15,15 @@ $(document).ready(function() {
 
 	$(".title_menuArea div").mouseover(function(){
 		var menuNo = $(this).attr("role");
-		if(menuNo == 01) {
+		if(menuNo == 02) {
 			$(this).children("img").attr('src', 'img/index_icon_2_hover.png');
 			$(this).children("h3").css('color', 'rgba(255,255,255,.90)');
 		}
-		else if(menuNo == 02) {
+		else if(menuNo == 03) {
 			$(this).children("img").attr('src', 'img/index_icon_1_hover.png');
 			$(this).children("h3").css('color', 'rgba(255,255,255,.90)');
 		}
-		else if(menuNo == 03) {
+		else if(menuNo == 04) {
 			$(this).children("img").attr('src', 'img/index_icon_3_hover.png');
 			$(this).children("h3").css('color', 'rgba(255,255,255,.90)');
 		};
@@ -31,15 +31,15 @@ $(document).ready(function() {
 
     $(".title_menuArea div").mouseout(function(){
     	var menuNo = $(this).attr("role");
-    	if(menuNo == 01) {
+    	if(menuNo == 02) {
     		$(this).children("img").attr('src', 'img/index_icon_2.png');
     		$(this).children("h3").css('color', 'rgba(255,255,255,.60)');
     	}
-		else if(menuNo == 02) {
+		else if(menuNo == 03) {
 			$(this).children("img").attr('src', 'img/index_icon_1.png');
 			$(this).children("h3").css('color', 'rgba(255,255,255,.60)');
 		}
-		else if(menuNo == 03) {
+		else if(menuNo == 04) {
 			$(this).children("img").attr('src', 'img/index_icon_3.png');
 			$(this).children("h3").css('color', 'rgba(255,255,255,.60)');
 		};
@@ -109,37 +109,10 @@ $(document).ready(function() {
 		}
     });
 
-
-	$(".menu_buttonHome").on('click',function(){
-		var boxHome = Math.round( $("section:nth-of-type(1)").offset().top );
-		var boxPortfolio = Math.round( $("section:nth-of-type(2)").offset().top );
-		var boxAbout = Math.round( $("article").offset().top );
-		var boxContact = Math.round( $("section:nth-of-type(3)").offset().top );
-		$('body, html').animate({ scrollTop: boxHome }, 500);
-	});
-
-	$(".menu_buttonWorks").on('click',function(){
-		var boxHome = Math.round( $("section:nth-of-type(1)").offset().top );
-		var boxPortfolio = Math.round( $("section:nth-of-type(2)").offset().top );
-		var boxAbout = Math.round( $("article").offset().top );
-		var boxContact = Math.round( $("section:nth-of-type(3)").offset().top );
-		$('body, html').animate({ scrollTop: boxPortfolio }, 500);
-	});
-
-	$(".menu_buttonAbout").on('click',function(){
-		var boxHome = Math.round( $("section:nth-of-type(1)").offset().top );
-		var boxPortfolio = Math.round( $("section:nth-of-type(2)").offset().top );
-		var boxAbout = Math.round( $("article").offset().top );
-		var boxContact = Math.round( $("section:nth-of-type(3)").offset().top );
-		$('body, html').animate({ scrollTop: boxAbout }, 500);
-	});
-
-	$(".menu_buttonContact").on('click',function(){
-		var boxHome = Math.round( $("section:nth-of-type(1)").offset().top );
-		var boxPortfolio = Math.round( $("section:nth-of-type(2)").offset().top );
-		var boxAbout = Math.round( $("article").offset().top );
-		var boxContact = Math.round( $("section:nth-of-type(3)").offset().top );
-		$('body, html').animate({ scrollTop: boxContact }, 500);
+	$(".menu_button").on('click',function(){
+		var menuNo = $(this).attr("role");
+		var boxPosition = Math.round( $(".portfolio_section[role=" + menuNo + "]").offset().top);
+		$('body, html').animate({ scrollTop: boxPosition }, 500);
 	});
 
 	$(window).scroll(function() {
