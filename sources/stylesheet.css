@@ -612,6 +612,14 @@ hr {
   overflow: hidden;
 }
 
+.section#about {
+  background: url(./../img/mainBackground.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 575.98px) {
   .section {
     padding: 3.5rem 0;
