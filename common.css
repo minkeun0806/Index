@@ -549,8 +549,8 @@ img,video {
     width: 90vw
 }
 
-.max-w-\[1140px\] {
-    max-width: 1140px
+.max-w-\[1020px\] {
+    max-width: 1020px
 }
 
 @keyframes blinkEffect {
