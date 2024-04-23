@@ -15,9 +15,9 @@ $(document).ready(function() {
 	});
 	$('#모바일메뉴').on('click',function(){
 		if($(this).hasClass('nav-actived')){
-			navReaction('open');
-		} else {
 			navReaction('close');
+		} else {
+			navReaction('open');
 		};
 	});
 });
