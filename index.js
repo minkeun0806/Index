@@ -20,6 +20,8 @@ $(document).ready(function() {
 			navReaction('open');
 		};
 	});
+
+	initializeSlides();
 });
 
 function navReaction(_action){
@@ -32,6 +34,25 @@ function navReaction(_action){
 	};
 };
 
+function initializeSlides(){
+	if($('body').find('.careerSwiper').length > 0){
+		var slideObj = $('.careerSwiper');
+
+		var careerSwiper = new Swiper('.careerSwiper', {
+			autoplay: {delay: 5000},
+			slidesPerView: 1,
+			spaceBetween: 0,
+			loop: true,
+			pagenation: {
+				el: '.swiper-pagination'
+			},
+			navigation: {
+				prevEl: '.swiper-button-prev',
+				nextEl: '.swiper-button-next'
+			}
+		});
+	};
+};
 
 
 /**
