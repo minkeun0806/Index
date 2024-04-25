@@ -41,6 +41,7 @@ function initializeSlides(){
 			spaceBetween: 0,
 			observer : true,
 			observeParents : true,
+			autoHeight : true,
 			loop: true,
 			autoplay: {
 				delay: 5000,
