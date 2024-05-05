@@ -1,1014 +1,1017 @@
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta http-eqUIv="keywords" content="html, css, JavaScript, jquery, 퍼블리셔, 웹퍼블리셔, 웹퍼블, 퍼블, 프론트엔드, 개발, publishing, web publing, publisher, frontend, front-end, 포트폴리오">
-    <meta name="description" content="송민근 포트폴리오" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="송민근 포트폴리오" />
-    <meta property="og:description" content="송민근 포트폴리오" />
-    <meta property="og:url" content="https://minkeun0806.github.io/Index/" />
-    <meta property="og:site_name" content="송민근 포트폴리오" />
-    <meta property="og:image" content="/thumbnail.jpg" />
-    <meta property="og:image:width" content="800" />
-    <meta property="og:image:height" content="400" />
-    <meta property="og:locale" content="ko_KR" />
-    <meta name="Classification" content="HTML / CSS / JavaScript(JQuery)">
-    <meta name="Copyright" content="송민근 포트폴리오">
-    <title>송민근 포트폴리오</title>
-    <link href="https://unpkg.com/aos@next/dist/aos.css" /  rel="stylesheet">
-    <!-- <link href="./test.css" rel="stylesheet"> -->
-    <link href="common.css" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
-    <script src="js/jquery-3.2.0.min.js"></script>
-    <script src="index.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  </head>
-  <body>
-    <header class="fixed w-[100vw] py-[16px] px-[] bg-common-white opacity-100 shadow-lg shadow-black/15 z-[10]" style="z-index: 9999;">
-        <div class="max-w-[1020px] flex justify-between items-center my-0 mx-auto px-[0] max-[640px]:px-[20px]">
-            <div id="logo" class="text-text-333 text-[24px] font-semibold max-[640px]:text-[20px]" style="cursor: pointer;">SONG&#x27;S PORTFOLIO</div>
-            <nav class="block max-[640px]:hidden">
-                <ul class="flex justify-between items-center flex-row text-text-555 text-[18px] font-semibold list-none max-[640px]:flex-col max-[640px]:bg-common-white max-[640px]:z-[10]">
-                    <li class="my-0 mx-[20px] cursor-pointer max-[640px]:p-[16px]">
-                        <a href="#자기소개">ABOUT ME</a>
-                    </li>
-                    <li class="my-0 mx-[20px] cursor-pointer max-[640px]:p-[16px]">
-                        <a href="#기술">SKILLS</a>
-                    </li>
-                    <li class="my-0 mx-[20px] cursor-pointer max-[640px]:p-[16px]">
-                        <a href="#경력">CAREER</a>
-                    </li>
-                    <!-- <li class="my-0 mx-[20px] cursor-pointer max-[640px]:p-[16px]">
-                        <a href="#프로젝트">Projects</a>
-                    </li> -->
-                </ul>
-            </nav>
-            <button type="button" class="hidden max-[640px]:block" id="모바일메뉴">
-                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="4" y="6" width="18" height="1.5" fill="black"></rect>
-                    <rect x="4" y="12.5" width="18" height="1.5" fill="black"></rect>
-                    <rect x="4" y="19" width="18" height="1.5" fill="black"></rect>
-                </svg>
-            </button>
-        </div>
-    </header>
-    <main class="w-[100vw] h-[100vh] my-0 mx-auto bg-compo-primary text-text-555" style="position: relative;">
-        <video class="view_player" autoplay loop muted>
-            <source class="background_video1" src="video/index.mp4" type="video/mp4">
-            <source class="background_video2" src="video/index_level1.3.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="flex justify-center flex-col m-auto w-[90vw] h-[100vh] text-center text-white">
-            <h1 class="mb-[100px] tracking-tight font-blackHan animate-trackingInExpand z-[10] max-[640px]:text-[38px]" style="font-size: 70px;">
-                안정적인 프로젝트 운영을 하는<br/>퍼블리셔, 프론트엔드 개발자<br>송민근 입니다.
-            </h1>
-            <strong class="font-[400]" style="font-size: 32px;">다양한 웹 경험이 강점인 하이브리드형 스크립터</strong>
-            <a>
-                <button id="scrollBtn" class="absolute bottom-[50px] w-[50px] h-[50px] left-[calc(50%-25px)] bg-common-white/50 rounded-full text-[20px] animate-blinkEffect">▼</button>
-            </a>
-        </div>
-    </main>
-    <section class="w-[100vw] py-[150px] bg-common-white overflow-hidden max-[640px]:py-[100px]" id="자기소개">
-        <div class="max-w-[1020px] m-auto">
-            <h2 class="font-blackHan text-[60px] text-center max-[640px]:text-[48px] text-text-333"><strong class="font-bold">ABOUT ME</strong>(자기소개)</h2>
-            <div class="w-[50px] my-[50px] mx-auto border-b-[2px] border-solid border-common-blue"></div>
-            <div class="py-[20px]">
-                <div class="flex justify-center items-center flex-row py-[20px] max-[640px]:flex-col max-[640px]:gap-[20px]">
-                    <img alt="me" loading="lazy" width="2144" height="2144" decoding="async" data-nimg="1" class="w-[300px] rounded-full max-[640px]:w-[250px]" style="color:transparent" srcSet="./img/Main_image.jpg" src="./img/Main_image.jpg"/>
-                    <div class="text-text-333 pl-[150px] max-[640px]:p-0 max-[640px]:text-center">
-                        <strong class="text-[32px] font-extrabold text-center tracking-[10px]">송민근</strong>
-                        <span class="text-text-777 text-[18px] max-[640px]:block max-[640px]:text-[16px]">웹 퍼블리셔, 프론트엔드 개발자</span>
-                        <p class="my-[20px] text-[18px] leading-[1.2] max-[640px]:text-[16px]">
-                            HTML, CSS, JavaScript, JQuery, 라이브러리를 이용한<br>웹 페이지 신규 제작, 유지보수, 추가제작업무를 수행합니다.
-                        </p>
-                        <h3 class="text-[24px] font-bold">CONTACT(연락처)</h3>
-                        <p class="my-[20px] text-[18px] leading-[1.2] max-[640px]:text-[14px]">E-mail minkeun0806@naver.com</p>
-                        <p class="my-[20px] text-[18px] leading-[1.2] max-[640px]:text-[14px]">휴대폰 010-5875-9393</p>
-                    </div>
-                </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta http-eqUIv="keywords" content="html, css, JavaScript, jquery, 퍼블리셔, 웹퍼블리셔, 웹퍼블, 퍼블, 프론트엔드, 개발, publishing, web publing, publisher, frontend, front-end, 포트폴리오">
+        <meta name="description" content="송민근 포트폴리오" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="송민근 포트폴리오" />
+        <meta property="og:description" content="송민근 포트폴리오" />
+        <meta property="og:url" content="https://minkeun0806.github.io/Index/" />
+        <meta property="og:site_name" content="송민근 포트폴리오" />
+        <meta property="og:image" content="/thumbnail.jpg" />
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:height" content="400" />
+        <meta property="og:locale" content="ko_KR" />
+        <meta name="Classification" content="HTML / CSS / JavaScript(JQuery)">
+        <meta name="Copyright" content="송민근 포트폴리오">
+        <title>송민근 포트폴리오</title>
+        <link href="https://unpkg.com/aos@next/dist/aos.css" /  rel="stylesheet">
+        <!-- <link href="./test.css" rel="stylesheet"> -->
+        <link href="common.css" rel="stylesheet">
+        <link href="index.css" rel="stylesheet">
+        <script src="js/jquery-3.2.0.min.js"></script>
+        <script src="index.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    </head>
+    <body>
+        <header class="fixed w-[100vw] py-[16px] px-[] bg-common-white opacity-100 shadow-lg shadow-black/15 z-[10]" style="z-index: 9999;">
+            <div class="max-w-[1020px] flex justify-between items-center my-0 mx-auto px-[0] max-[640px]:px-[20px]">
+                <div id="logo" class="text-text-333 text-[24px] font-semibold max-[640px]:text-[20px]" style="cursor: pointer;">SONG&#x27;S PORTFOLIO</div>
+                <nav class="block max-[640px]:hidden">
+                    <ul class="flex justify-between items-center flex-row text-text-555 text-[18px] font-semibold list-none max-[640px]:flex-col max-[640px]:bg-common-white max-[640px]:z-[10]">
+                        <li class="my-0 mx-[20px] cursor-pointer max-[640px]:p-[16px]">
+                            <a href="#자기소개">ABOUT ME</a>
+                        </li>
+                        <li class="my-0 mx-[20px] cursor-pointer max-[640px]:p-[16px]">
+                            <a href="#기술">SKILLS</a>
+                        </li>
+                        <li class="my-0 mx-[20px] cursor-pointer max-[640px]:p-[16px]">
+                            <a href="#경력">CAREER</a>
+                        </li>
+                        <!-- <li class="my-0 mx-[20px] cursor-pointer max-[640px]:p-[16px]">
+                            <a href="#프로젝트">Projects</a>
+                        </li> -->
+                    </ul>
+                </nav>
+                <button type="button" class="hidden max-[640px]:block" id="모바일메뉴">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="4" y="6" width="18" height="1.5" fill="black"></rect>
+                        <rect x="4" y="12.5" width="18" height="1.5" fill="black"></rect>
+                        <rect x="4" y="19" width="18" height="1.5" fill="black"></rect>
+                    </svg>
+                </button>
             </div>
-        </div>
-    </section>
-    <section class="w-[100vw] py-[150px] bg-compo-bg-yellow overflow-hidden max-[640px]:py-[100px]" id="기술">
-        <div class="max-w-[1020px] m-auto">
-            <h2 class="font-blackHan text-[60px] text-center max-[640px]:text-[48px] text-text-333"><strong class="font-bold">SKILLS</strong>(기술)</h2>
-            <div class="w-[50px] my-[50px] mx-auto border-b-[2px] border-solid border-common-yellow"></div>
-            <div class="py-[20px]">
-                <div class="flex justify-start items-start flex-row gap-[20px] flex-wrap p-[30px] bg-common-white rounded-[12px] max-[640px]:p-[15px] shadow-lg shadow-black/20 transition duration-200 ease-out hover:translate-y-[-20px] max-[640px]:p-[15px] hover:transform-none mt-[40px] max-[640px]:flex-col max-[640px]:m-[20px] max-[640px]:gap-[20px]">
-                    <div class="flex justify-center items-start flex-col gap-[10px]">
-                        <h3 class="text-text-yellow text-[28px] font-[600] nowrap max-[640px]:text-[20px]">Basic</h3>
-                        <ul class="flex justify-start items-center flex-row flex-wrap gap-[20px]">
-                            <li class="p-[10px] max-[640px]:hidden">
-                                <img alt="basic" loading="lazy" width="960" height="60" decoding="async" data-nimg="1" style="color:transparent" srcSet="sources/pp1.jpg" src="sources/pp1.jpg"/>
-                            </li>
-                            <li class="p-[10px] max-[640px]:hidden">
-                                <img alt="basic" loading="lazy" width="242" height="60" decoding="async" data-nimg="1" style="color:transparent" srcSet="sources/pp1-1.jpg" src="sources/pp1.jpg"/>
-                            </li>
-                            <li class="p-[10px] hidden max-[640px]:block">
-                                <img alt="basic" loading="lazy" width="622" height="120" decoding="async" data-nimg="1" style="color:transparent" srcSet="sources/pp1-2.jpg" src="sources/pp1.jpg"/>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="w-[80vw] mx-auto border-[1px] border-solid border-compo-line max-[640px]:hidden"></div>
-                    <div class="hidden w-[80vw] mx-auto border-[1px] border-solid border-compo-line max-[640px]:block"></div>
-                    <div class="flex justify-center items-start flex-col gap-[10px]">
-                        <h3 class="text-text-yellow text-[28px] font-[600] nowrap max-[640px]:text-[20px]">DBML</h3>
-                        <ul class="flex justify-start items-center flex-row flex-wrap gap-[20px]">
-                            <li class="p-[10px]">
-                                <img alt="dbml" loading="lazy" width="551" height="60" decoding="async" data-nimg="1" style="color:transparent" srcSet="sources/pp2.jpg" src="sources/pp2.jpg"/>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="w-[80vw] mx-auto border-[1px] border-solid border-compo-line max-[640px]:hidden"></div>
-                    <div class="hidden w-[80vw] mx-auto border-[1px] border-solid border-compo-line max-[640px]:block"></div>
-                    <div class="flex justify-center items-start flex-col gap-[10px]">
-                        <h3 class="text-text-yellow text-[28px] font-[600] nowrap max-[640px]:text-[20px]">Communication</h3>
-                        <ul class="flex justify-start items-center flex-row flex-wrap gap-[20px]">
-                            <li class="p-[10px]">
-                                <img alt="Communication" loading="lazy" width="622" height="60" decoding="async" data-nimg="1" style="color:transparent" srcSet="sources/pp3.jpg" src="sources/pp3.jpg"/>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="w-[80vw] mx-auto border-[1px] border-solid border-compo-line max-[640px]:hidden"></div>
-                    <div class="hidden w-[80vw] mx-auto border-[1px] border-solid border-compo-line max-[640px]:block"></div>
-                    <div class="flex justify-center items-start flex-col gap-[10px]">
-                        <h3 class="text-text-yellow text-[28px] font-[600] nowrap max-[640px]:text-[20px]">Serverside</h3>
-                        <ul class="flex justify-start items-center flex-row flex-wrap gap-[20px]">
-                            <li class="p-[10px]">
-                                <img alt="Serverside" loading="lazy" width="273" height="60" decoding="async" data-nimg="1" style="color:transparent" srcSet="sources/pp4.jpg" src="sources/pp4.jpg"/>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="w-[80vw] mx-auto border-[1px] border-solid border-compo-line max-[640px]:hidden"></div>
-                    <div class="hidden w-[80vw] mx-auto border-[1px] border-solid border-compo-line max-[640px]:block"></div>
-                    <div class="flex justify-center items-start flex-col gap-[10px]">
-                        <h3 class="text-text-yellow text-[28px] font-[600] nowrap max-[640px]:text-[20px]">Framework</h3>
-                        <ul class="flex justify-start items-center flex-row flex-wrap gap-[20px]">
-                            <li class="p-[10px]">
-                                <img alt="Framework" loading="lazy" width="387" height="60" decoding="async" data-nimg="1" style="color:transparent" srcSet="sources/pp5.jpg" src="sources/pp5.jpg"/>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="w-[80vw] mx-auto border-[1px] border-solid border-compo-line max-[640px]:hidden"></div>
-                    <div class="hidden w-[80vw] mx-auto border-[1px] border-solid border-compo-line max-[640px]:block"></div>
-                    <div class="flex justify-center items-start flex-col gap-[10px]">
-                        <h3 class="text-text-yellow text-[28px] font-[600] nowrap max-[640px]:text-[20px]">Version Control</h3>
-                        <ul class="flex justify-start items-center flex-row flex-wrap gap-[20px]">
-                            <li class="p-[10px]">
-                                <img alt="Versioncontrol" loading="lazy" width="519" height="60" decoding="async" data-nimg="1" style="color:transparent" srcSet="sources/pp6.jpg" src="sources/pp6.jpg"/>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        </header>
+        <main class="w-[100vw] h-[100vh] my-0 mx-auto bg-compo-primary text-text-555" style="position: relative;">
+            <video class="view_player" autoplay loop muted>
+                <source class="background_video1" src="video/index.mp4" type="video/mp4">
+                <source class="background_video2" src="video/index_level1.3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="flex justify-center flex-col m-auto w-[90vw] h-[100vh] text-center text-white">
+                <h1 class="text-[70px] mb-[100px] tracking-tight font-blackHan animate-trackingInExpand z-[10] max-[640px]:text-[38px]">
+                    안정적인 프로젝트 운영을 하는<br/>퍼블리셔, 프론트엔드 개발자<br>송민근 입니다.
+                </h1>
+                <strong class="text-[32px] font-[400] max-[640px]:text-[18px]">다양한 웹 경험이 강점인 하이브리드형 스크립터</strong>
+                <a>
+                    <button id="scrollBtn" class="absolute bottom-[50px] w-[50px] h-[50px] left-[calc(50%-25px)] bg-common-white/50 rounded-full text-[20px] animate-blinkEffect">▼</button>
+                </a>
             </div>
-        </div>
-    </section>
-    <section class="w-[100vw] py-[150px] bg-common-lightGray overflow-hidden max-[640px]:py-[100px]" id="경력">
-        <div class="max-w-[1020px] m-auto">
-            <h2 class="font-blackHan text-[60px] text-center max-[640px]:text-[48px] text-text-333"><strong class="font-bold">CAREER</strong>(경력)</h2>
-            <div class="w-[50px] my-[50px] mx-auto border-b-[2px] border-solid border-compo-green"></div>
-            <div class="py-[20px]">
-                <div class="flex justify-start items-start flex-row gap-[20px] flex-wrap p-[30px] bg-common-white rounded-[12px] max-[640px]:p-[15px] shadow-lg shadow-black/20 transition duration-200 ease-out hover:translate-y-[-20px] max-[640px]:p-[15px] hover:transform-none mt-[40px] max-[640px]:flex-col max-[640px]:m-[20px] max-[640px]:gap-[20px]">
-                    <div class="w-[100%] p-[30px]">
-                        <h3 class="font-blackHan text-text-green text-[36px] max-[640px]:text-[32px]">IPartners(㈜아이파트너즈)</h3>
-                        <p class="my-[10px] text-text-777 text-[16px] max-[640px]:text-[14px]">근무기간: 2021-02 ~ 재직중</p>
-                        <div>
-                            <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
-                                <strong class="inline-block px-[5px] bg-yellow-100 text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> KB국민카드 </strong>
-                                <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://card.kbcard.com/">웹</a> / <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://m.kbcard.com/">모바일</a> / 하이브리드앱
+        </main>
+        <section class="w-[100vw] py-[150px] bg-common-white overflow-hidden max-[640px]:py-[100px]" id="자기소개">
+            <div class="max-w-[1020px] m-auto">
+                <h2 class="font-blackHan text-[60px] text-center max-[640px]:text-[48px] text-text-333">
+                    <span class="px-[30px] pb-[54px] max-[640px]:pb-[62px] max-[640px]:px-[10px] border-b-[2px] border-solid border-common-blue">
+                        <strong class="font-bold">ABOUT ME</strong><span class="max-[640px]:hidden">(자기소개)</span>
+                    </span>
+                </h2>
+                <div class="w-[100%] my-[50px] h-[1px]"></div>
+                <div class="py-[20px]">
+                    <div class="flex justify-center items-center flex-row py-[20px] max-[640px]:flex-col max-[640px]:gap-[20px]">
+                        <img alt="me" loading="lazy" width="2144" height="2144" decoding="async" data-nimg="1" class="w-[300px] rounded-full max-[640px]:w-[250px]" style="color:transparent" srcSet="./img/Main_image.jpg" src="./img/Main_image.jpg"/>
+                        <div class="text-text-333 pl-[150px] max-[640px]:p-0 max-[640px]:text-center">
+                            <strong class="text-[32px] font-extrabold text-center tracking-[10px]">송민근</strong>
+                            <span class="text-text-777 text-[18px] max-[640px]:block max-[640px]:text-[16px]">웹 퍼블리셔, 프론트엔드 개발자</span>
+                            <p class="my-[20px] text-[18px] leading-[1.2] max-[640px]:text-[16px]">
+                                HTML, CSS, JavaScript, JQuery, 라이브러리를 이용한<br>웹 페이지 신규 제작, 유지보수, 추가제작업무를 수행합니다.
                             </p>
-                            <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide13_1.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide13_3.jpg"/>
+                            <h3 class="text-[24px] font-bold">CONTACT(연락처)</h3>
+                            <p class="my-[20px] text-[18px] leading-[1.2] max-[640px]:text-[14px]">E-mail minkeun0806@naver.com</p>
+                            <p class="my-[20px] text-[18px] leading-[1.2] max-[640px]:text-[14px]">휴대폰 010-5875-9393</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-[100vw] py-[150px] bg-compo-bg-yellow overflow-hidden max-[640px]:py-[100px]" id="기술">
+            <div class="max-w-[1020px] m-auto">
+                <h2 class="font-blackHan text-[60px] text-center max-[640px]:text-[48px] text-text-333">
+                    <span class="px-[30px] pb-[54px] max-[640px]:pb-[62px] max-[640px]:px-[10px] border-b-[2px] border-solid border-common-yellow">
+                        <strong class="font-bold">SKILLS</strong><span class="max-[640px]:hidden">(기술)</span>
+                    </span>
+                </h2>
+                <div class="w-[100%] my-[50px] h-[1px]"></div>
+                <div class="py-[20px]">
+                    <div class="flex justify-start items-start flex-row gap-[20px] flex-wrap p-[30px] bg-common-white rounded-[12px] max-[640px]:p-[15px] shadow-lg shadow-black/20 transition duration-200 ease-out hover:translate-y-[-20px] max-[640px]:p-[15px] hover:transform-none max-[640px]:flex-col max-[640px]:m-[20px] max-[640px]:gap-[20px]">
+                        <div class="flex justify-center items-start flex-col gap-[10px]">
+                            <h3 class="text-text-yellow text-[28px] font-[600] nowrap max-[640px]:text-[20px]">Basic</h3>
+                            <ul class="flex justify-start items-center flex-row flex-wrap gap-[20px]">
+                                <li class="p-[10px] max-[640px]:hidden">
+                                    <img alt="basic" loading="lazy" width="960" height="60" decoding="async" data-nimg="1" style="color:transparent" srcSet="sources/pp1.jpg" src="sources/pp1.jpg"/>
+                                </li>
+                                <li class="p-[10px] max-[640px]:hidden">
+                                    <img alt="basic" loading="lazy" width="242" height="60" decoding="async" data-nimg="1" style="color:transparent" srcSet="sources/pp1-1.jpg" src="sources/pp1.jpg"/>
+                                </li>
+                                <li class="p-[10px] hidden max-[640px]:block">
+                                    <img alt="basic" loading="lazy" width="622" height="120" decoding="async" data-nimg="1" style="color:transparent" srcSet="sources/pp1-2.jpg" src="sources/pp1.jpg"/>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-[80vw] mx-auto border-[1px] border-solid border-compo-line max-[640px]:hidden"></div>
+                        <div class="hidden w-[80vw] mx-auto border-[1px] border-solid border-compo-line max-[640px]:block"></div>
+                        <div class="flex justify-center items-start flex-col gap-[10px]">
+                            <h3 class="text-text-yellow text-[28px] font-[600] nowrap max-[640px]:text-[20px]">DBML</h3>
+                            <ul class="flex justify-start items-center flex-row flex-wrap gap-[20px]">
+                                <li class="p-[10px]">
+                                    <img alt="dbml" loading="lazy" width="551" height="60" decoding="async" data-nimg="1" style="color:transparent" srcSet="sources/pp2.jpg" src="sources/pp2.jpg"/>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-[80vw] mx-auto border-[1px] border-solid border-compo-line max-[640px]:hidden"></div>
+                        <div class="hidden w-[80vw] mx-auto border-[1px] border-solid border-compo-line max-[640px]:block"></div>
+                        <div class="flex justify-center items-start flex-col gap-[10px]">
+                            <h3 class="text-text-yellow text-[28px] font-[600] nowrap max-[640px]:text-[20px]">Communication</h3>
+                            <ul class="flex justify-start items-center flex-row flex-wrap gap-[20px]">
+                                <li class="p-[10px]">
+                                    <img alt="Communication" loading="lazy" width="622" height="60" decoding="async" data-nimg="1" style="color:transparent" srcSet="sources/pp3.jpg" src="sources/pp3.jpg"/>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-[80vw] mx-auto border-[1px] border-solid border-compo-line max-[640px]:hidden"></div>
+                        <div class="hidden w-[80vw] mx-auto border-[1px] border-solid border-compo-line max-[640px]:block"></div>
+                        <div class="flex justify-center items-start flex-col gap-[10px]">
+                            <h3 class="text-text-yellow text-[28px] font-[600] nowrap max-[640px]:text-[20px]">Serverside</h3>
+                            <ul class="flex justify-start items-center flex-row flex-wrap gap-[20px]">
+                                <li class="p-[10px]">
+                                    <img alt="Serverside" loading="lazy" width="273" height="60" decoding="async" data-nimg="1" style="color:transparent" srcSet="sources/pp4.jpg" src="sources/pp4.jpg"/>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-[80vw] mx-auto border-[1px] border-solid border-compo-line max-[640px]:hidden"></div>
+                        <div class="hidden w-[80vw] mx-auto border-[1px] border-solid border-compo-line max-[640px]:block"></div>
+                        <div class="flex justify-center items-start flex-col gap-[10px]">
+                            <h3 class="text-text-yellow text-[28px] font-[600] nowrap max-[640px]:text-[20px]">Framework</h3>
+                            <ul class="flex justify-start items-center flex-row flex-wrap gap-[20px]">
+                                <li class="p-[10px]">
+                                    <img alt="Framework" loading="lazy" width="387" height="60" decoding="async" data-nimg="1" style="color:transparent" srcSet="sources/pp5.jpg" src="sources/pp5.jpg"/>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-[80vw] mx-auto border-[1px] border-solid border-compo-line max-[640px]:hidden"></div>
+                        <div class="hidden w-[80vw] mx-auto border-[1px] border-solid border-compo-line max-[640px]:block"></div>
+                        <div class="flex justify-center items-start flex-col gap-[10px]">
+                            <h3 class="text-text-yellow text-[28px] font-[600] nowrap max-[640px]:text-[20px]">Version Control</h3>
+                            <ul class="flex justify-start items-center flex-row flex-wrap gap-[20px]">
+                                <li class="p-[10px]">
+                                    <img alt="Versioncontrol" loading="lazy" width="519" height="60" decoding="async" data-nimg="1" style="color:transparent" srcSet="sources/pp6.jpg" src="sources/pp6.jpg"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-[100vw] py-[150px] bg-common-lightGray overflow-hidden max-[640px]:py-[100px]" id="경력">
+            <div class="max-w-[1020px] m-auto">
+                <h2 class="font-blackHan text-[60px] text-center max-[640px]:text-[48px] text-text-333">
+                    <span class="px-[30px] pb-[54px] max-[640px]:pb-[62px] max-[640px]:px-[10px] border-b-[2px] border-solid border-compo-green">
+                        <strong class="font-bold">CAREER</strong><span class="max-[640px]:hidden">(경력)</span>
+                    </span>
+                </h2>
+                <div class="w-[100%] my-[50px] h-[1px]"></div>
+                <div class="py-[20px]">
+                    <div class="flex justify-start items-start flex-row gap-[20px] flex-wrap p-[30px] bg-common-white rounded-[12px] max-[640px]:p-[15px] shadow-lg shadow-black/20 transition duration-200 ease-out hover:translate-y-[-20px] max-[640px]:p-[15px] hover:transform-none max-[640px]:flex-col max-[640px]:m-[20px] max-[640px]:gap-[20px]">
+                        <div class="w-[100%] p-[30px]">
+                            <h3 class="font-blackHan text-text-green text-[36px] max-[640px]:text-[32px]">IPartners<br class="hidden max-[640px]:block">(㈜아이파트너즈)</h3>
+                            <p class="my-[10px] text-text-777 text-[16px] max-[640px]:text-[14px]">근무기간: 2021-02 ~ 재직중</p>
+                            <div>
+                                <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
+                                    <strong class="inline-block px-[5px] text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> KB국민카드 </strong>
+                                    <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://card.kbcard.com/">웹</a> / <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://m.kbcard.com/">모바일</a> / 하이브리드앱
+                                </p>
+                                <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide13_1.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide13_3.jpg"/>
+                                        </div>
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide13_2.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide13_4.jpg"/>
+                                        </div>
                                     </div>
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide13_2.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide13_4.jpg"/>
-                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-pagination"></div>
                                 </div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                            <button type="button" class="flex justify-center items-center flex-row py-[15px] px-[30px] bg-common-lightGray text-[18px] rounded-[10px]">
-                                <img alt="app store logo" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" style="color:transparent" srcSet="https://img1.kbcard.com/LT/img/qbbs/common/event/2024a/240215_QR.png" src="https://img1.kbcard.com/LT/img/qbbs/common/event/2024a/240215_QR.png"/>
-                                <span class="ml-[24px] text-text-777 underline">App Store Link</span>
-                            </button>
-                            <!-- <iframe src="https://m.kbcard.com/CMN/DVIEW/MOAMCXHIAAMC0002" width="100%" height="450" class="max-[640px]:w-[100%] max-[640px]:h-[350px]"></iframe> -->
+                                <button type="button" class="flex justify-center items-center flex-row py-[15px] px-[30px] bg-common-lightGray text-[18px] rounded-[10px]">
+                                    <img alt="app store logo" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" style="color:transparent" srcSet="https://img1.kbcard.com/LT/img/qbbs/common/event/2024a/240215_QR.png" src="https://img1.kbcard.com/LT/img/qbbs/common/event/2024a/240215_QR.png"/>
+                                    <span class="ml-[24px] text-text-777 underline">App Store Link</span>
+                                </button>
 
-                            <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기간</strong>: 2023-03-06 ~ 현재
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 담당 역할</strong>
-                                    <ul class="my-[5px] pl-[20px] list">
-                                        <li>KB국민카드 PC, 모바일 웹, 모바일 앱 SM업무, 추가 퍼블리싱</li>
-                                        <li>고객사 요청에 따른 UI 마크업 변경 수정 작업</li>
-                                        <li>메인배너 변경, 개선 작업</li>
-                                        <li>각종 새 소식, 이메일 페이지 작성 및 템플릿 개선</li>
-                                        <li>이벤트 페이지의 퍼블리싱과 이벤트 연동</li>
-                                        <li>웹 페이지 내 UX 라이팅 수정, 추가 작업</li>
-                                        <li>이벤트 리스트, 브랜드 할인 페이지 개선 진행</li>
-                                    </ul>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기여도</strong>: 20%
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
-                        <div>
-                            <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
-                                <strong class="inline-block px-[5px] bg-purple-100 text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 현대백화점면세점 </strong>
-                                <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://www.hddfs.com/shop/dm/main.do">국문</a> / <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://cn.hd-dfs.com/shop/dm/main.do">중문</a> / <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://en.hddfs.com/shop/dm/main.do">영문</a>
-                            </p>
-                            <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide12_1.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide12_3.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide12_2.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide12_4.jpg"/>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-pagination"></div>
+                                <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기간</strong>: 2023-03-06 ~ 현재
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 담당 역할</strong>
+                                        <ul class="my-[5px] pl-[20px] list">
+                                            <li>KB국민카드 PC, 모바일 웹, 모바일 앱 SM업무, 추가 퍼블리싱</li>
+                                            <li>고객사 요청에 따른 UI 마크업 변경 수정 작업</li>
+                                            <li>메인배너 변경, 개선 작업</li>
+                                            <li>각종 새 소식, 이메일 페이지 작성 및 템플릿 개선</li>
+                                            <li>이벤트 페이지의 퍼블리싱과 이벤트 연동</li>
+                                            <li>웹 페이지 내 UX 라이팅 수정, 추가 작업</li>
+                                            <li>이벤트 리스트, 브랜드 할인 페이지 개선 진행</li>
+                                        </ul>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기여도</strong>: 20%
+                                    </li>
+                                </ul>
                             </div>
-                            <!-- <iframe src="https://www.hddfs.com/" width="100%" height="450" class="max-[640px]:w-[100%] max-[640px]:h-[350px]"></iframe> -->
-                            <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기간</strong>: 2021-11-29 ~ 2023-03-03
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">scss</button>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 담당 역할</strong>
-                                    <ul class="my-[5px] pl-[20px] list">
-                                        <li>현대백화점면세점 웹 페이지의 SM업무 및 추가 퍼블리싱</li>
-                                        <li>각 마크업 별 Google Analytics 4 스크립트 작업</li>
-                                        <li>고객사 요청에 따른 UI 마크업 변경과 수정 작업</li>
-                                        <li>명품 브랜드 전용 웹 페이지 신규 제작 및 리뉴얼 작업</li>
-                                        <li>면세점 이벤트 페이지 마크업 작업, 웹 페이지 내 JAVA class 설정 기반 이벤트 참여</li>
-                                        <li>비동기 통신 스크립트 수정 및 신규 제작</li>
-                                        <li>이벤트 스크립트 작성 내역 기반 개발 페이지의 이벤트 설정, 참여 테스트</li>
-                                        <li>면세점 영문몰 웹 페이지 오픈을 위한 영문 번역 추가 작업</li>
-                                        <li>영문몰 미번역의 부분 번역 작업(영문번역 직접수행)</li>
-                                    </ul>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기여도</strong>: 34%
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
-                        <div>
-                            <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
-                                <strong class="inline-block px-[5px] bg-black-100 text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 제네시스 닷컴 </strong>
-                                <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://www.genesis.com/kr/ko/main.html">국문</a> / <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://www.genesis.com/worldwide/en/main.html">월드와이드</a> / <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://www.genesis.com/ca/en/main.html">캐나다</a> / <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://www.genesis.com/us/en/home">미국</a>
-                            </p>
-                            <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide11_1.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide11_3.jpg"/>
+                            <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
+                            <div>
+                                <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
+                                    <strong class="inline-block px-[5px] text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 현대백화점면세점 </strong>
+                                    <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://www.hddfs.com/shop/dm/main.do">국문</a> / <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://cn.hd-dfs.com/shop/dm/main.do">중문</a> / <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://en.hddfs.com/shop/dm/main.do">영문</a>
+                                </p>
+                                <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide12_1.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide12_3.jpg"/>
+                                        </div>
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide12_2.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide12_4.jpg"/>
+                                        </div>
                                     </div>
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide11_2.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide11_4.jpg"/>
-                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-pagination"></div>
                                 </div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-pagination"></div>
+                                <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기간</strong>: 2021-11-29 ~ 2023-03-03
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">scss</button>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 담당 역할</strong>
+                                        <ul class="my-[5px] pl-[20px] list">
+                                            <li>현대백화점면세점 웹 페이지의 SM업무 및 추가 퍼블리싱</li>
+                                            <li>각 마크업 별 Google Analytics 4 스크립트 작업</li>
+                                            <li>고객사 요청에 따른 UI 마크업 변경과 수정 작업</li>
+                                            <li>명품 브랜드 전용 웹 페이지 신규 제작 및 리뉴얼 작업</li>
+                                            <li>면세점 이벤트 페이지 마크업 작업, 웹 페이지 내 JAVA class 설정 기반 이벤트 참여</li>
+                                            <li>비동기 통신 스크립트 수정 및 신규 제작</li>
+                                            <li>이벤트 스크립트 작성 내역 기반 개발 페이지의 이벤트 설정, 참여 테스트</li>
+                                            <li>면세점 영문몰 웹 페이지 오픈을 위한 영문 번역 추가 작업</li>
+                                            <li>영문몰 미번역의 부분 번역 작업(영문번역 직접수행)</li>
+                                        </ul>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기여도</strong>: 34%
+                                    </li>
+                                </ul>
                             </div>
-                            <!-- <iframe src="https://www.genesis.com/kr/ko/main.html" width="100%" height="450" class="max-[640px]:w-[100%] max-[640px]:h-[350px]"></iframe> -->
-                            <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기간</strong>: 2021-02-01 ~ 2021-11-26
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">scss</button>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 담당 역할</strong>
-                                    <ul class="my-[5px] pl-[20px] list">
-                                        <li>제네시스 닷컴 웹 페이지의 SM업무, 추가 퍼블리싱</li>
-                                        <li>웹 페이지 내 각종 공지사항, 뉴스, 이벤트 마크업 작업</li>
-                                        <li>웹 페이지 내 제네시스 로드트립, 제네시스 익스피리언스 페이지 lnb 수정</li>
-                                        <li>제네시스 반응형 gnb UI 변경 작업</li>
-                                        <li>제네시스 전기차 신규 페이지 추가 및 UI 수정 작업 진행
-                                        <br>1) 멤버스 → 차량관리서비스 → 충전안내 페이지 신규 제작 및 AEM 연동
-                                        <br>2) 구매 → 구매 프로그램 → G-FINANCE 소개 → 전기차 페이지 내역 추가
-                                        <br>3) 구매 → 전기차 구매가이드 페이지 신규 제작, AEM 연동</li>
-                                        <li>체험 → 시승신청 메인화면 UI 변경 작업</li>
-                                        <li>메인화면 내 OUR MODELS 슬라이드 UI, 인터렉션 변경</li>
-                                        <li>구매 → 견적내기 메인화면 UI구조, 슬라이드 인터렉션 변경</li>
-                                        <li>구매 → 견적 상세 화면, 견적서 인쇄화면 마크업 수정, 변경</li>
-                                    </ul>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기여도</strong>: 50%
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
-                        <div>
-                            <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
-                                <strong class="inline-block px-[5px] bg-blue-100 text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 현대자동차 글로벌 </strong>
-                                <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://www.hyundai.com/worldwide/en/">
-                                페이지</a> UI 추가 작업
-                            </p>
-                            <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide10_1.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide10_3.jpg"/>
+                            <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
+                            <div>
+                                <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
+                                    <strong class="inline-block px-[5px] bg-black-100 text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 제네시스 닷컴 </strong>
+                                    <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://www.genesis.com/kr/ko/main.html">국문</a> / <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://www.genesis.com/worldwide/en/main.html">월드와이드</a> / <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://www.genesis.com/ca/en/main.html">캐나다</a> / <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://www.genesis.com/us/en/home">미국</a>
+                                </p>
+                                <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide11_1.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide11_3.jpg"/>
+                                        </div>
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide11_2.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide11_4.jpg"/>
+                                        </div>
                                     </div>
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide10_2.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide10_4.jpg"/>
-                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-pagination"></div>
                                 </div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-pagination"></div>
+                                <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기간</strong>: 2021-02-01 ~ 2021-11-26
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">scss</button>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 담당 역할</strong>
+                                        <ul class="my-[5px] pl-[20px] list">
+                                            <li>제네시스 닷컴 웹 페이지의 SM업무, 추가 퍼블리싱</li>
+                                            <li>웹 페이지 내 각종 공지사항, 뉴스, 이벤트 마크업 작업</li>
+                                            <li>웹 페이지 내 제네시스 로드트립, 제네시스 익스피리언스 페이지 lnb 수정</li>
+                                            <li>제네시스 반응형 gnb UI 변경 작업</li>
+                                            <li>제네시스 전기차 신규 페이지 추가 및 UI 수정 작업 진행
+                                            <br>1) 멤버스 → 차량관리서비스 → 충전안내 페이지 신규 제작 및 AEM 연동
+                                            <br>2) 구매 → 구매 프로그램 → G-FINANCE 소개 → 전기차 페이지 내역 추가
+                                            <br>3) 구매 → 전기차 구매가이드 페이지 신규 제작, AEM 연동</li>
+                                            <li>체험 → 시승신청 메인화면 UI 변경 작업</li>
+                                            <li>메인화면 내 OUR MODELS 슬라이드 UI, 인터렉션 변경</li>
+                                            <li>구매 → 견적내기 메인화면 UI구조, 슬라이드 인터렉션 변경</li>
+                                            <li>구매 → 견적 상세 화면, 견적서 인쇄화면 마크업 수정, 변경</li>
+                                        </ul>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기여도</strong>: 50%
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기간</strong>: 2021-04-06 ~ 2021-04-09
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 담당 역할</strong>
-                                    <ul class="my-[5px] pl-[20px] list">
-                                        <li>현대자동차 글로벌 웹 페이지 내 아티클검색 개선을 위한 추가 퍼블리싱</li>
-                                        <li>아티클검색 보조 UI 추가(슬라이드형 2depths gnb)</li>
-                                        <li>아티클 본문 하단에 신규 tag내역 추가</li>
-                                    </ul>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기여도</strong>: 80%
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
-                        <div>
-                            <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
-                                <strong class="inline-block px-[5px] bg-blue-100 text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 삼성엑티브자산운용 </strong>
-                                <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://www.samsungactive.co.kr/lounge/stewardship.do">웹 페이지</a> 추가 작업
-                            </p>
-                            <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img alt="" src="sources/slide9_1.jpg"/>
+                            <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
+                            <div>
+                                <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
+                                    <strong class="inline-block px-[5px] text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 현대자동차 글로벌 </strong>
+                                    <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://www.hyundai.com/worldwide/en/">
+                                    페이지</a> UI 추가 작업
+                                </p>
+                                <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide10_1.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide10_3.jpg"/>
+                                        </div>
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide10_2.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide10_4.jpg"/>
+                                        </div>
                                     </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-pagination"></div>
                                 </div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-pagination"></div>
+                                <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기간</strong>: 2021-04-06 ~ 2021-04-09
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 담당 역할</strong>
+                                        <ul class="my-[5px] pl-[20px] list">
+                                            <li>현대자동차 글로벌 웹 페이지 내 아티클검색 개선을 위한 추가 퍼블리싱</li>
+                                            <li>아티클검색 보조 UI 추가(슬라이드형 2depths gnb)</li>
+                                            <li>아티클 본문 하단에 신규 tag내역 추가</li>
+                                        </ul>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기여도</strong>: 80%
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기간</strong>: 2021-04-06 ~ 2021-04-09
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 담당 역할</strong>
-                                    <ul class="my-[5px] pl-[20px] list">
-                                        <li>PC, Mobile 사이트 → 스튜어드십코드 웹 페이지 내 신규 내역 추가</li>
-                                        <li>스튜어드십코드 웹 페이지 내 신규 tab, 어코디언, 본문 추가</li>
-                                    </ul>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기여도</strong>: 100%
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
-                        <div>
-                            <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
-                                <strong class="inline-block px-[5px] bg-blue-100 text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 현대자동차 수소상용차 </strong> 웹 퍼블리싱 작업
-                            </p>
-                            <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기간</strong>: 2021-02-08 ~ 2021-02-18
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 담당 역할</strong>
-                                    <ul class="my-[5px] pl-[20px] list">
-                                        <li>웹 디자인 파일을 근거로 한 수소상용트럭 관련 컨텐츠 퍼블리싱 진행<br>- page: Our Moments, Company, Newsroom List 외 15pages(총 18pages)</li>
-                                    </ul>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기여도</strong>: 50%
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
-                        <div>
-                            <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
-                                <strong class="inline-block px-[5px] bg-blue-100 text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 현대자동차 인재채용 </strong>
-                                <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://talent.hyundai.com/apply/applyList.hc">사이트</a> 공고 게시글 작업
-                            </p>
-                            <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide8_1.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide8_4.jpg"/>
+                            <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
+                            <div>
+                                <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
+                                    <strong class="inline-block px-[5px] text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 삼성엑티브자산운용 </strong>
+                                    <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://www.samsungactive.co.kr/lounge/stewardship.do">웹 페이지</a> 추가 작업
+                                </p>
+                                <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img alt="" src="sources/slide9_1.jpg"/>
+                                        </div>
                                     </div>
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide8_2.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide8_5.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide8_3.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide8_6.jpg"/>
-                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-pagination"></div>
                                 </div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-pagination"></div>
+                                <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기간</strong>: 2021-04-06 ~ 2021-04-09
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 담당 역할</strong>
+                                        <ul class="my-[5px] pl-[20px] list">
+                                            <li>PC, Mobile 사이트 → 스튜어드십코드 웹 페이지 내 신규 내역 추가</li>
+                                            <li>스튜어드십코드 웹 페이지 내 신규 tab, 어코디언, 본문 추가</li>
+                                        </ul>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기여도</strong>: 100%
+                                    </li>
+                                </ul>
                             </div>
-                            <!-- <iframe src="https://talent.hyundai.com/apply/applyList.hc" width="100%" height="450" class="max-[640px]:w-[100%] max-[640px]:h-[350px]"></iframe> -->
-                            <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기간</strong>: 2021-02-01 ~ 2021-03-18
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 담당 역할</strong>
-                                    <ul class="my-[5px] pl-[20px] list">
-                                        <li>기존 마크업 규칙에 의거한 신규 채용 내역 게시</li>
-                                    </ul>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기여도</strong>: 50%
-                                </li>
-                            </ul>
+                            <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
+                            <div>
+                                <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
+                                    <strong class="inline-block px-[5px] text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 현대자동차 수소상용차 </strong> 웹 퍼블리싱 작업
+                                </p>
+                                <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기간</strong>: 2021-02-08 ~ 2021-02-18
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 담당 역할</strong>
+                                        <ul class="my-[5px] pl-[20px] list">
+                                            <li>웹 디자인 파일을 근거로 한 수소상용트럭 관련 컨텐츠 퍼블리싱 진행<br>- page: Our Moments, Company, Newsroom List 외 15pages(총 18pages)</li>
+                                        </ul>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기여도</strong>: 50%
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
+                            <div>
+                                <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
+                                    <strong class="inline-block px-[5px] text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 현대자동차 인재채용 </strong>
+                                    <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://talent.hyundai.com/apply/applyList.hc">사이트</a> 공고 게시글 작업
+                                </p>
+                                <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide8_1.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide8_4.jpg"/>
+                                        </div>
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide8_2.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide8_5.jpg"/>
+                                        </div>
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide8_3.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide8_6.jpg"/>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기간</strong>: 2021-02-01 ~ 2021-03-18
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 담당 역할</strong>
+                                        <ul class="my-[5px] pl-[20px] list">
+                                            <li>기존 마크업 규칙에 의거한 신규 채용 내역 게시</li>
+                                        </ul>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기여도</strong>: 50%
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="hidden w-[80vw] my-[50px] mx-auto border-[1px] border-solid border-compo-line max-[640px]:block"></div>
-                <div class="flex justify-start items-start flex-row gap-[20px] flex-wrap p-[30px] bg-common-white rounded-[12px] max-[640px]:p-[15px] shadow-lg shadow-black/20 transition duration-200 ease-out hover:translate-y-[-20px] max-[640px]:p-[15px] hover:transform-none mt-[40px] max-[640px]:flex-col max-[640px]:m-[20px] max-[640px]:gap-[20px]">
-                    <div class="w-[100%] p-[30px]">
-                        <h3 class="font-blackHan text-text-green text-[36px] max-[640px]:text-[32px]">High Doctor(㈜하이이미지)</h3>
-                        <p class="my-[10px] text-text-777 text-[16px] max-[640px]:text-[14px]">근무기간: 2020-08 ~ 2021-01</p>
-                        <div>
-                            <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
-                                <strong class="inline-block px-[5px] bg-white-100 text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 병 · 의원 웹 페이지 유지 보수, 추가 개발 </strong>
-                            </p>
-                            <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기간</strong>: 2020-08-03 ~ 2021-01-29
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MySQL</button>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 담당 역할</strong>
-                                    <ul class="my-[5px] pl-[20px] list">
-                                        <li>병원 웹 페이지 신규 개발 전반</li>
-                                        <li>병원 웹 페이지 유지보수, 추가개발</li>
-                                        <li>병원 웹 페이지 팝업 디자인, 등록 및 삭제, 위치변경</li>
-                                        <li>웹 페이지 메인 배너 수정</li>
-                                        <li>진료내역 변경 및 상세 페이지 추가 개발과 삭제</li>
-                                        <li>병원 웹 페이지 내 진료시간 수정</li>
-                                        <li>홈페이지 내 UI, 기능 구현 및 추가 개발</li>
-                                        <li>홈페이지 ON/OFF</li>
-                                    </ul>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기여도</strong>: 100%
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
-                        <div>
-                            <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
-                                <strong class="inline-block px-[5px] bg-white-100 text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 베스트항맥외과 </strong>
-                                <a target="_blank" rel="noreferrer" class="text-text-blue" href="http://www.bestdrs.co.kr/">홈페이지</a> 리뉴얼
-                            </p>
-                            <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide7_1.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide7_3.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide7_2.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide7_4.jpg"/>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-pagination"></div>
+                    <div class="hidden w-[80vw] my-[50px] mx-auto border-[1px] border-solid border-compo-line max-[640px]:block"></div>
+                    <div class="flex justify-start items-start flex-row gap-[20px] flex-wrap p-[30px] bg-common-white rounded-[12px] max-[640px]:p-[15px] shadow-lg shadow-black/20 transition duration-200 ease-out hover:translate-y-[-20px] max-[640px]:p-[15px] hover:transform-none mt-[40px] max-[640px]:flex-col max-[640px]:m-[20px] max-[640px]:gap-[20px]">
+                        <div class="w-[100%] p-[30px]">
+                            <h3 class="font-blackHan text-text-green text-[36px] max-[640px]:text-[32px]">High Doctor<br class="hidden max-[640px]:block">(㈜하이이미지)</h3>
+                            <p class="my-[10px] text-text-777 text-[16px] max-[640px]:text-[14px]">근무기간: 2020-08 ~ 2021-01</p>
+                            <div>
+                                <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
+                                    <strong class="inline-block px-[5px] text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 병 · 의원 웹 페이지 유지 보수, 추가 개발 </strong>
+                                </p>
+                                <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기간</strong>: 2020-08-03 ~ 2021-01-29
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MySQL</button>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 담당 역할</strong>
+                                        <ul class="my-[5px] pl-[20px] list">
+                                            <li>병원 웹 페이지 신규 개발 전반</li>
+                                            <li>병원 웹 페이지 유지보수, 추가개발</li>
+                                            <li>병원 웹 페이지 팝업 디자인, 등록 및 삭제, 위치변경</li>
+                                            <li>웹 페이지 메인 배너 수정</li>
+                                            <li>진료내역 변경 및 상세 페이지 추가 개발과 삭제</li>
+                                            <li>병원 웹 페이지 내 진료시간 수정</li>
+                                            <li>홈페이지 내 UI, 기능 구현 및 추가 개발</li>
+                                            <li>홈페이지 ON/OFF</li>
+                                        </ul>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기여도</strong>: 100%
+                                    </li>
+                                </ul>
                             </div>
-                            <!-- <iframe src="http://www.bestdrs.co.kr/" width="100%" height="450" class="max-[640px]:w-[100%] max-[640px]:h-[350px]"></iframe> -->
-                            <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기간</strong>: 2020-12-14 ~ 2020-12-24
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">scss</button>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 담당 역할</strong>
-                                    <ul class="my-[5px] pl-[20px] list">
-                                        <li>웹 페이지 리뉴얼 작업 전반<br> - 웹 페이지 제작 기획<br> - 거래처로부터 컨셉과 진료내역, 디자인 시안 컨펌 수급<br> - 항맥외과 웹 페이지 신규 프론트엔드 개발</li>
-                                    </ul>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기여도</strong>: 100%
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
-                        <div>
-                            <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
-                                <strong class="inline-block px-[5px] bg-white-100 text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 쉬즈굿여성의원 </strong>
-                                <a target="_blank" rel="noreferrer" class="text-text-blue" href="http://shesgood.net/ad_labia.html">이벤트 페이지</a>
-                            </p>
-                            <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide6_1.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide6_3.jpg"/>
+                            <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
+                            <div>
+                                <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
+                                    <strong class="inline-block px-[5px] text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 베스트항맥외과 </strong>
+                                    <a target="_blank" rel="noreferrer" class="text-text-blue" href="http://www.bestdrs.co.kr/">홈페이지</a> 리뉴얼
+                                </p>
+                                <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide7_1.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide7_3.jpg"/>
+                                        </div>
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide7_2.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide7_4.jpg"/>
+                                        </div>
                                     </div>
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide6_2.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide6_4.jpg"/>
-                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-pagination"></div>
                                 </div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-pagination"></div>
+                                <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기간</strong>: 2020-12-14 ~ 2020-12-24
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">scss</button>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 담당 역할</strong>
+                                        <ul class="my-[5px] pl-[20px] list">
+                                            <li>웹 페이지 리뉴얼 작업 전반<br> - 웹 페이지 제작 기획<br> - 거래처로부터 컨셉과 진료내역, 디자인 시안 컨펌 수급<br> - 항맥외과 웹 페이지 신규 프론트엔드 개발</li>
+                                        </ul>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기여도</strong>: 100%
+                                    </li>
+                                </ul>
                             </div>
-                            <!-- <iframe src="http://shesgood.net/ad_labia.html" width="100%" height="450" class="max-[640px]:w-[100%] max-[640px]:h-[350px]"></iframe> -->
-                            <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기간</strong>: 2020-12-14 ~ 2020-12-24
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MySQL</button>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 담당 역할</strong>
-                                    <ul class="my-[5px] pl-[20px] list">
-                                        <li>웹 페이지에 대한 랜딩 이벤트 페이지 제작<br> - 웹 페이지 제작 기획<br> - 거래처로부터 컨셉, 진료내역, 디자인 시안 컨펌 수급<br> - url 입력시 진입하는 랜딩 페이지 신규 제작</li>
-                                    </ul>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기여도</strong>: 100%
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
-                        <div>
-                            <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
-                                <strong class="inline-block px-[5px] bg-white-100 text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 한송이산부인과 </strong>
-                                <a target="_blank" rel="noreferrer" class="text-text-blue" href="http://hansongyeeobgyn.net/">반응형 웹</a>
-                            </p>
-                            <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide5_1.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide5_3.jpg"/>
+                            <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
+                            <div>
+                                <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
+                                    <strong class="inline-block px-[5px] text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 쉬즈굿여성의원 </strong>
+                                    <a target="_blank" rel="noreferrer" class="text-text-blue" href="http://shesgood.net/ad_labia.html">이벤트 페이지</a>
+                                </p>
+                                <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide6_1.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide6_3.jpg"/>
+                                        </div>
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide6_2.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide6_4.jpg"/>
+                                        </div>
                                     </div>
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide5_2.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide5_4.jpg"/>
-                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-pagination"></div>
                                 </div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-pagination"></div>
+                                <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기간</strong>: 2020-12-14 ~ 2020-12-24
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MySQL</button>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 담당 역할</strong>
+                                        <ul class="my-[5px] pl-[20px] list">
+                                            <li>웹 페이지에 대한 랜딩 이벤트 페이지 제작<br> - 웹 페이지 제작 기획<br> - 거래처로부터 컨셉, 진료내역, 디자인 시안 컨펌 수급<br> - url 입력시 진입하는 랜딩 페이지 신규 제작</li>
+                                        </ul>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기여도</strong>: 100%
+                                    </li>
+                                </ul>
                             </div>
-                            <!-- <iframe src="http://hansongyeeobgyn.net/" width="100%" height="450" class="max-[640px]:w-[100%] max-[640px]:h-[350px]"></iframe> -->
-                            <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기간</strong>: 2020-09-14 ~ 2020-11-20
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MySQL</button>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 담당 역할</strong>
-                                    <ul class="my-[5px] pl-[20px] list">
-                                        <li>홈페이지 개발 전반<br> - 웹 페이지 제작 기획<br> - 거래처로부터 컨셉, 진료내역, 디자인 시안 컨펌 수급<br> - 산부인과 웹 페이지 프론트엔드 개발</li>
-                                    </ul>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기여도</strong>: 100%
-                                </li>
-                            </ul>
-                        </div>
-                      
-                        <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
-                        <div>
-                            <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
-                                <strong class="inline-block px-[5px] bg-white-100 text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 논현리뉴의원 </strong> 홈페이지
-                            </p>
-                            <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기간</strong>: 2020-09-18 ~ 2020-11-13
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MySQL</button>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 담당 역할</strong>
-                                    <ul class="my-[5px] pl-[20px] list">
-                                        <li>홈페이지 개발 전반<br> - 웹 페이지 제작 기획<br> - 거래처로부터 컨셉, 진료내역, 디자인 시안 컨펌 수급<br> - 피부과 웹 페이지 프론트엔드 개발</li>
-                                    </ul>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기여도</strong>: 100%
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
-                        <div>
-                            <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
-                                <strong class="inline-block px-[5px] bg-blue-100 text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> ㈜하이닥터 웹 쇼핑몰 </strong>
-                            </p>
-                            <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기간</strong>: 2020-08-18 ~ 2020-09-22
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MySQL</button>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 담당 역할</strong>
-                                    <ul class="my-[5px] pl-[20px] list">
-                                        <li>웹 쇼핑몰 프론트엔드 개발</li>
-                                        <li>쇼핑몰 제작 기획</li>
-                                        <li>상품 상세 페이지 디자인, 적용</li>
-                                    </ul>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기여도</strong>: 100%
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
-                        <div>
-                            <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
-                                <strong class="inline-block px-[5px] bg-blue-100 text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 하이닥터 </strong>
-                                <a target="_blank" rel="noreferrer" class="text-text-blue" href="http://hidr.kr/main.html">홈페이지</a>
-                            </p>
-                            <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide4_1.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide4_3.jpg"/>
+                            <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
+                            <div>
+                                <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
+                                    <strong class="inline-block px-[5px] text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 한송이산부인과 </strong>
+                                    <a target="_blank" rel="noreferrer" class="text-text-blue" href="http://hansongyeeobgyn.net/">반응형 웹</a>
+                                </p>
+                                <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide5_1.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide5_3.jpg"/>
+                                        </div>
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide5_2.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide5_4.jpg"/>
+                                        </div>
                                     </div>
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide4_2.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide4_4.jpg"/>
-                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-pagination"></div>
                                 </div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-pagination"></div>
+                                <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기간</strong>: 2020-09-14 ~ 2020-11-20
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MySQL</button>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 담당 역할</strong>
+                                        <ul class="my-[5px] pl-[20px] list">
+                                            <li>홈페이지 개발 전반<br> - 웹 페이지 제작 기획<br> - 거래처로부터 컨셉, 진료내역, 디자인 시안 컨펌 수급<br> - 산부인과 웹 페이지 프론트엔드 개발</li>
+                                        </ul>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기여도</strong>: 100%
+                                    </li>
+                                </ul>
                             </div>
-                            <!-- <iframe src="http://hidr.kr/" width="100%" height="450" class="max-[640px]:w-[100%] max-[640px]:h-[350px]"></iframe> -->
-                            <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기간</strong>: 2020-09-18 ~ 2021-01-31
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MySQL</button>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 담당 역할</strong>
-                                    <ul class="my-[5px] pl-[20px] list">
-                                        <li>당사 홈페이지 전반 프론트엔드 개발 및 리뉴얼 작업</li>
-                                        <li>본사 웹 페이지 유지보수, 추가 제작</li>
-                                        <li>상단 배너 및 좌측 광고, 하단 상품 슬라이드 제작</li>
-                                        <li>배너 디자인 제작</li>
-                                    </ul>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기여도</strong>: 100%
-                                </li>
-                            </ul>
+
+                            <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
+                            <div>
+                                <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
+                                    <strong class="inline-block px-[5px] text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 논현리뉴의원 </strong> 홈페이지
+                                </p>
+                                <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기간</strong>: 2020-09-18 ~ 2020-11-13
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MySQL</button>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 담당 역할</strong>
+                                        <ul class="my-[5px] pl-[20px] list">
+                                            <li>홈페이지 개발 전반<br> - 웹 페이지 제작 기획<br> - 거래처로부터 컨셉, 진료내역, 디자인 시안 컨펌 수급<br> - 피부과 웹 페이지 프론트엔드 개발</li>
+                                        </ul>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기여도</strong>: 100%
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
+                            <div>
+                                <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
+                                    <strong class="inline-block px-[5px] text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> ㈜하이닥터 웹 쇼핑몰 </strong>
+                                </p>
+                                <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기간</strong>: 2020-08-18 ~ 2020-09-22
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MySQL</button>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 담당 역할</strong>
+                                        <ul class="my-[5px] pl-[20px] list">
+                                            <li>웹 쇼핑몰 프론트엔드 개발</li>
+                                            <li>쇼핑몰 제작 기획</li>
+                                            <li>상품 상세 페이지 디자인, 적용</li>
+                                        </ul>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기여도</strong>: 100%
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
+                            <div>
+                                <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
+                                    <strong class="inline-block px-[5px] text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 하이닥터 </strong>
+                                    <a target="_blank" rel="noreferrer" class="text-text-blue" href="http://hidr.kr/main.html">홈페이지</a>
+                                </p>
+                                <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide4_1.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide4_3.jpg"/>
+                                        </div>
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide4_2.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide4_4.jpg"/>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기간</strong>: 2020-09-18 ~ 2021-01-31
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MySQL</button>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 담당 역할</strong>
+                                        <ul class="my-[5px] pl-[20px] list">
+                                            <li>당사 홈페이지 전반 프론트엔드 개발 및 리뉴얼 작업</li>
+                                            <li>본사 웹 페이지 유지보수, 추가 제작</li>
+                                            <li>상단 배너 및 좌측 광고, 하단 상품 슬라이드 제작</li>
+                                            <li>배너 디자인 제작</li>
+                                        </ul>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기여도</strong>: 100%
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="hidden w-[80vw] my-[50px] mx-auto border-[1px] border-solid border-compo-line max-[640px]:block"></div>
-                <div class="flex justify-start items-start flex-row gap-[20px] flex-wrap p-[30px] bg-common-white rounded-[12px] max-[640px]:p-[15px] shadow-lg shadow-black/20 transition duration-200 ease-out hover:translate-y-[-20px] max-[640px]:p-[15px] hover:transform-none mt-[40px] max-[640px]:flex-col max-[640px]:m-[20px] max-[640px]:gap-[20px]">
-                    <div class="w-[100%] p-[30px]">
-                        <h3 class="font-blackHan text-text-green text-[36px] max-[640px]:text-[32px]">GS Neotek(㈜지에스 네오텍)</h3>
-                        <p class="my-[10px] text-text-777 text-[16px] max-[640px]:text-[14px]">근무기간: 2018-08 ~ 2019-09</p>
-                        <div>
-                            <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">현대카드, 현대캐피탈, 현대커머셜 상담프로그램, 통계표출 프로그램의 유지보수, 추가개발을 위한 파견근무</p>
-                            <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기간</strong>: 2018-08-01 ~ 2019-09-20
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JAVA</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">GenesysFramework</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">C++</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">Oracle</button>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 담당 역할</strong>
-                                    <ul class="my-[5px] pl-[20px] list">
-                                        <li>상담프로그램 유지보수, 프론트엔드 및 벡엔드 개발</li>
-                                        <li>통계표출프로그램 유지보수, 프론트엔드 및 벡엔드 개발</li>
-                                    </ul>
-                                </li>
-                            </ul>
+                    <div class="hidden w-[80vw] my-[50px] mx-auto border-[1px] border-solid border-compo-line max-[640px]:block"></div>
+                    <div class="flex justify-start items-start flex-row gap-[20px] flex-wrap p-[30px] bg-common-white rounded-[12px] max-[640px]:p-[15px] shadow-lg shadow-black/20 transition duration-200 ease-out hover:translate-y-[-20px] max-[640px]:p-[15px] hover:transform-none mt-[40px] max-[640px]:flex-col max-[640px]:m-[20px] max-[640px]:gap-[20px]">
+                        <div class="w-[100%] p-[30px]">
+                            <h3 class="font-blackHan text-text-green text-[36px] max-[640px]:text-[32px]">GS Neotek<br class="hidden max-[640px]:block">(㈜지에스 네오텍)</h3>
+                            <p class="my-[10px] text-text-777 text-[16px] max-[640px]:text-[14px]">근무기간: 2018-08 ~ 2019-09</p>
+                            <div>
+                                <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">현대카드, 현대캐피탈, 현대커머셜 상담프로그램, 통계표출 프로그램의 유지보수, 추가개발을 위한 파견근무</p>
+                                <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기간</strong>: 2018-08-01 ~ 2019-09-20
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JAVA</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">GenesysFramework</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">C++</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">Oracle</button>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 담당 역할</strong>
+                                        <ul class="my-[5px] pl-[20px] list">
+                                            <li>상담프로그램 유지보수, 프론트엔드 및 벡엔드 개발</li>
+                                            <li>통계표출프로그램 유지보수, 프론트엔드 및 벡엔드 개발</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="hidden w-[80vw] my-[50px] mx-auto border-[1px] border-solid border-compo-line max-[640px]:block"></div>
-                <div class="flex justify-start items-start flex-row gap-[20px] flex-wrap p-[30px] bg-common-white rounded-[12px] max-[640px]:p-[15px] shadow-lg shadow-black/20 transition duration-200 ease-out hover:translate-y-[-20px] max-[640px]:p-[15px] hover:transform-none mt-[40px] max-[640px]:flex-col max-[640px]:m-[20px] max-[640px]:gap-[20px]">
-                    <div class="w-[100%] p-[30px]">
-                        <h3 class="font-blackHan text-text-green text-[36px] max-[640px]:text-[32px]">한국온라인등록센터</h3>
-                        <p class="my-[10px] text-text-777 text-[16px] max-[640px]:text-[14px]">근무기간: 2018-03 ~ 2018-06</p>
-                        <div>
-                            <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">한국온라인등록센터 제작팀 업무 지원</p>
-                            <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기간</strong>: 2018-03-05 ~ 2018-06-01
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JAVA</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">PHP</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MySQL</button>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 담당 역할</strong>
-                                    <ul class="my-[5px] pl-[20px] list">
-                                        <li>웹 쇼핑몰 프론트엔드 개발</li>
-                                        <li>마케팅 팀 계약업체 등록, 관리 프로그램 유지 보수</li>
-                                    </ul>
-                                </li>
-                            </ul>
+                    <div class="hidden w-[80vw] my-[50px] mx-auto border-[1px] border-solid border-compo-line max-[640px]:block"></div>
+                    <div class="flex justify-start items-start flex-row gap-[20px] flex-wrap p-[30px] bg-common-white rounded-[12px] max-[640px]:p-[15px] shadow-lg shadow-black/20 transition duration-200 ease-out hover:translate-y-[-20px] max-[640px]:p-[15px] hover:transform-none mt-[40px] max-[640px]:flex-col max-[640px]:m-[20px] max-[640px]:gap-[20px]">
+                        <div class="w-[100%] p-[30px]">
+                            <h3 class="font-blackHan text-text-green text-[36px] max-[640px]:text-[32px]">한국온라인등록센터</h3>
+                            <p class="my-[10px] text-text-777 text-[16px] max-[640px]:text-[14px]">근무기간: 2018-03 ~ 2018-06</p>
+                            <div>
+                                <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">한국온라인등록센터 제작팀 업무 지원</p>
+                                <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기간</strong>: 2018-03-05 ~ 2018-06-01
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JAVA</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">PHP</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MySQL</button>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 담당 역할</strong>
+                                        <ul class="my-[5px] pl-[20px] list">
+                                            <li>웹 쇼핑몰 프론트엔드 개발</li>
+                                            <li>마케팅 팀 계약업체 등록, 관리 프로그램 유지 보수</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="hidden w-[80vw] my-[50px] mx-auto border-[1px] border-solid border-compo-line max-[640px]:block"></div>
-                <div class="flex justify-start items-start flex-row gap-[20px] flex-wrap p-[30px] bg-common-white rounded-[12px] max-[640px]:p-[15px] shadow-lg shadow-black/20 transition duration-200 ease-out hover:translate-y-[-20px] max-[640px]:p-[15px] hover:transform-none mt-[40px] max-[640px]:flex-col max-[640px]:m-[20px] max-[640px]:gap-[20px]">
-                    <div class="w-[100%] p-[30px]">
-                        <h3 class="font-blackHan text-text-green text-[36px] max-[640px]:text-[32px]">우리C&C(㈜우리씨앤씨)</h3>
-                        <p class="my-[10px] text-text-777 text-[16px] max-[640px]:text-[14px]">근무기간: 2017-02 ~ 2018-02</p>
-                        <div>
-                            <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
-                                <strong class="inline-block px-[5px] bg-blue-100 text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 현대닷컴 </strong>
-                                <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://www.hyundai.com/kr/ko/e">웹</a> 통합 프로젝트
-                            </p>
-                            <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide3_1.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide3_3.jpg"/>
+                    <div class="hidden w-[80vw] my-[50px] mx-auto border-[1px] border-solid border-compo-line max-[640px]:block"></div>
+                    <div class="flex justify-start items-start flex-row gap-[20px] flex-wrap p-[30px] bg-common-white rounded-[12px] max-[640px]:p-[15px] shadow-lg shadow-black/20 transition duration-200 ease-out hover:translate-y-[-20px] max-[640px]:p-[15px] hover:transform-none mt-[40px] max-[640px]:flex-col max-[640px]:m-[20px] max-[640px]:gap-[20px]">
+                        <div class="w-[100%] p-[30px]">
+                            <h3 class="font-blackHan text-text-green text-[36px] max-[640px]:text-[32px]">우리C&C<br class="hidden max-[640px]:block">(㈜우리씨앤씨)</h3>
+                            <p class="my-[10px] text-text-777 text-[16px] max-[640px]:text-[14px]">근무기간: 2017-02 ~ 2018-02</p>
+                            <div>
+                                <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
+                                    <strong class="inline-block px-[5px] text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 현대닷컴 </strong>
+                                    <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://www.hyundai.com/kr/ko/e">웹</a> 통합 프로젝트
+                                </p>
+                                <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide3_1.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide3_3.jpg"/>
+                                        </div>
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide3_2.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide3_4.jpg"/>
+                                        </div>
                                     </div>
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide3_2.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide3_4.jpg"/>
-                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-pagination"></div>
                                 </div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-pagination"></div>
+                                <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기간</strong>: 2017-08-01 ~ 2018-02-02
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">Oracle</button>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 담당 역할</strong>
+                                        <ul class="my-[5px] pl-[20px] list">
+                                            <li>사용자 홈페이지와 관리자 홈페이지 통합 웹 페이지 프론트엔드 개발<br> - 현대자동차<br> - 블루멤버스<br> - 블루핸즈</li>
+                                        </ul>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기여도</strong>: 15%
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기간</strong>: 2017-08-01 ~ 2018-02-02
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">HTML</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">Oracle</button>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 담당 역할</strong>
-                                    <ul class="my-[5px] pl-[20px] list">
-                                        <li>사용자 홈페이지와 관리자 홈페이지 통합 웹 페이지 프론트엔드 개발<br> - 현대자동차<br> - 블루멤버스<br> - 블루핸즈</li>
-                                    </ul>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기여도</strong>: 15%
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
-                        <div>
-                            <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
-                                <strong class="inline-block px-[5px] bg-purple-100 text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 소울비트 </strong> 운영, 유지보수
-                            </p>
-                            <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기간</strong>: 2017-02-15 ~ 2017-07-22
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JSP</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MySQL</button>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 담당 역할</strong>
-                                    <ul class="my-[5px] pl-[20px] list">
-                                        <li>웹 페이지 내 레이아웃 추가 및 수정</li>
-                                        <li>비트코인 결제 관련 DB 로그 확인</li>
-                                        <li>컨퍼런스 소개 웹 페이지 제작</li>
-                                    </ul>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기여도</strong>: 35%
-                                </li>
-                            </ul>
+                            <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
+                            <div>
+                                <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
+                                    <strong class="inline-block px-[5px] text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 소울비트 </strong> 운영, 유지보수
+                                </p>
+                                <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기간</strong>: 2017-02-15 ~ 2017-07-22
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JSP</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MySQL</button>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 담당 역할</strong>
+                                        <ul class="my-[5px] pl-[20px] list">
+                                            <li>웹 페이지 내 레이아웃 추가 및 수정</li>
+                                            <li>비트코인 결제 관련 DB 로그 확인</li>
+                                            <li>컨퍼런스 소개 웹 페이지 제작</li>
+                                        </ul>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기여도</strong>: 35%
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="hidden w-[80vw] my-[50px] mx-auto border-[1px] border-solid border-compo-line max-[640px]:block"></div>
-                <div class="flex justify-start items-start flex-row gap-[20px] flex-wrap p-[30px] bg-common-white rounded-[12px] max-[640px]:p-[15px] shadow-lg shadow-black/20 transition duration-200 ease-out hover:translate-y-[-20px] max-[640px]:p-[15px] hover:transform-none mt-[40px] max-[640px]:flex-col max-[640px]:m-[20px] max-[640px]:gap-[20px]">
-                    <div class="w-[100%] p-[30px]">
-                        <h3 class="font-blackHan text-text-green text-[36px] max-[640px]:text-[32px]">Softnomics(소프트노믹스)</h3>
-                        <p class="my-[10px] text-text-777 text-[16px] max-[640px]:text-[14px]">근무기간: 2016-08 ~ 2016-12</p>
-                        <div>
-                            <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
-                                <strong class="inline-block px-[5px] bg-blue-100 text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 제주항공 </strong>
-                                <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://www.jejuair.net/ko/premium/sportsMembership/main.do">웹</a> 스포츠카드 맴버십 페이지 개발
-                            </p>
-                            <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide2_1.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide2_3.jpg"/>
+                    <div class="hidden w-[80vw] my-[50px] mx-auto border-[1px] border-solid border-compo-line max-[640px]:block"></div>
+                    <div class="flex justify-start items-start flex-row gap-[20px] flex-wrap p-[30px] bg-common-white rounded-[12px] max-[640px]:p-[15px] shadow-lg shadow-black/20 transition duration-200 ease-out hover:translate-y-[-20px] max-[640px]:p-[15px] hover:transform-none mt-[40px] max-[640px]:flex-col max-[640px]:m-[20px] max-[640px]:gap-[20px]">
+                        <div class="w-[100%] p-[30px]">
+                            <h3 class="font-blackHan text-text-green text-[36px] max-[640px]:text-[32px]">Softnomics<br class="hidden max-[640px]:block">(소프트노믹스)</h3>
+                            <p class="my-[10px] text-text-777 text-[16px] max-[640px]:text-[14px]">근무기간: 2016-08 ~ 2016-12</p>
+                            <div>
+                                <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
+                                    <strong class="inline-block px-[5px] text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 제주항공 </strong>
+                                    <a target="_blank" rel="noreferrer" class="text-text-blue" href="https://www.jejuair.net/ko/premium/sportsMembership/main.do">웹</a> 스포츠카드 맴버십 페이지 개발
+                                </p>
+                                <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide2_1.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide2_3.jpg"/>
+                                        </div>
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide2_2.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide2_4.jpg"/>
+                                        </div>
                                     </div>
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide2_2.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide2_4.jpg"/>
-                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-pagination"></div>
                                 </div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-pagination"></div>
+                                <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기간</strong>: 2016-11-04 ~ 2016-12-08
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JSP</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MySQL</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MongoDB</button>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 담당 역할</strong>
+                                        <ul class="my-[5px] pl-[20px] list">
+                                            <li>제주항공 스포츠멤버쉽 회원, 마일리지 포인트, 스포츠카드 관련 추가 개발<br> - 소개 웹 페이지 레이아웃 추가 및 수정<br> - 스포츠카드 서비스 결제의 DB 로그 확인</li>
+                                        </ul>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기여도</strong>: 10%
+                                    </li>
+                                </ul>
                             </div>
-                            <!-- <iframe src="https://www.jejuair.net/ko/premium/sportsMembership/main.do" width="100%" height="450" class="max-[640px]:w-[100%] max-[640px]:h-[350px]"></iframe> -->
-                            <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기간</strong>: 2016-11-04 ~ 2016-12-08
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JSP</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MySQL</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MongoDB</button>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 담당 역할</strong>
-                                    <ul class="my-[5px] pl-[20px] list">
-                                        <li>제주항공 스포츠멤버쉽 회원, 마일리지 포인트, 스포츠카드 관련 추가 개발<br> - 소개 웹 페이지 레이아웃 추가 및 수정<br> - 스포츠카드 서비스 결제의 DB 로그 확인</li>
-                                    </ul>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기여도</strong>: 10%
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
-                        <div>
-                            <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
-                                <strong class="inline-block px-[5px] bg-blue-100 text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 굿아카 </strong> 웹App 추가 개발
-                            </p>
-                            <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide1_1.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide1_5.jpg"/>
+                            <div class="w-full mt-[50px] mb-[20px] ml-0 border-b-[2px] border-dotted border-compo-green max-[640px]:w-full"></div>
+                            <div>
+                                <p class="my-[10px] text-text-333 text-[18px] leading-[1.5] max-[640px]:text-[16px]">
+                                    <strong class="inline-block px-[5px] text-[20px] font-[600] leading-[1.5] max-[640px]:text-[18px]"> 굿아카 </strong> 웹App 추가 개발
+                                </p>
+                                <div class="swiper careerSwiper w-[100%] h-[auto] my-[20px]">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide1_1.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide1_5.jpg"/>
+                                        </div>
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide1_2.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide1_6.jpg"/>
+                                        </div>
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide1_3.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide1_7.jpg"/>
+                                        </div>
+                                        <div class="swiper-slide w-[100%] h-[auto]">
+                                            <img class="block max-[640px]:hidden" alt="" src="sources/slide1_4.jpg"/>
+                                            <img class="hidden max-[640px]:block" alt="" src="sources/slide1_8.jpg"/>
+                                        </div>
                                     </div>
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide1_2.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide1_6.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide1_3.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide1_7.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide w-[100%] h-[auto]">
-                                        <img class="block max-[640px]:hidden" alt="" src="sources/slide1_4.jpg"/>
-                                        <img class="hidden max-[640px]:block" alt="" src="sources/slide1_8.jpg"/>
-                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-pagination"></div>
                                 </div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-pagination"></div>
+                                <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기간</strong>: 2016-09-10 ~ 2016-11-01
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JSP</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
+                                        <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MongoDB</button>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 담당 역할</strong>
+                                        <ul class="my-[5px] pl-[20px] list">
+                                            <li>내 위치 주변 학원 알림 프로그램 앱 개발</li>
+                                            <li>구글 지도 API 연동을 바탕으로 현재 위치와 학원 간 거리 표시 구현</li>
+                                        </ul>
+                                    </li>
+                                    <li class="text-text-555 leading-[1.8]">
+                                        <strong>✔️ 기여도</strong>: 50%
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="my-[20px] text-[18px] max-[640px]:text-[16px]">
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기간</strong>: 2016-09-10 ~ 2016-11-01
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ SKILLS</strong>: <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JSP</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">CSS</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">JavaScript</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">jQuery</button>
-                                    <button class="mx-[5px] my-[2px] px-[10px] bg-common-gray text-text-blue text-[14px] font-[500] rounded-[6px]">MongoDB</button>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 담당 역할</strong>
-                                    <ul class="my-[5px] pl-[20px] list">
-                                        <li>내 위치 주변 학원 알림 프로그램 앱 개발</li>
-                                        <li>구글 지도 API 연동을 바탕으로 현재 위치와 학원 간 거리 표시 구현</li>
-                                    </ul>
-                                </li>
-                                <li class="text-text-555 leading-[1.8]">
-                                    <strong>✔️ 기여도</strong>: 50%
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer class="py-[50px] text-common-white bg-compo-primary">
-        <p class="text-[18px] racking-tight text-center">Copyright ⓒ 2024. Mingeun Song All rights reserved.</p>
-    </footer>
-</body>
+        </section>
+        <footer class="py-[50px] text-common-white bg-compo-primary">
+            <p class="text-[18px] racking-tight text-center">Copyright ⓒ 2024. Mingeun Song All rights reserved.</p>
+        </footer>
+    </body>
 </html>
