@@ -570,6 +570,10 @@ img,video {
     width: 90vw
 }
 
+.max-w-\[876px\] {
+    max-width: 876px
+}
+
 .max-w-\[1020px\] {
     max-width: 1020px
 }
